@@ -1,6 +1,6 @@
-1.	GIỚI THIỆU
-1.1.	GIỚI THIỆU ĐỀ TÀI
-1.1.1.	Đặt vấn đề
+## GIỚI THIỆU
+###GIỚI THIỆU ĐỀ TÀI
+####Đặt vấn đề
 Trong bối cảnh hiện nay, công nghệ thông tin ngày càng phát triển mạnh mẽ và đóng vai trò quan trọng trong hầu hết các lĩnh vực của đời sống, trong đó có lĩnh vực thương mại và quản lý bán hàng. Đặc biệt, đối với các cửa hàng bán lẻ như cửa hàng đồ điện tử, nhu cầu về việc tin học hóa quy trình quản lý là một yêu cầu tất yếu nhằm nâng cao hiệu quả hoạt động kinh doanh, tiết kiệm chi phí, giảm thiểu sai sót và tăng khả năng cạnh tranh trên thị trường.
 Trên thực tế, nhiều cửa hàng nhỏ và vừa hiện nay vẫn quản lý hoạt động kinh doanh thông qua các phương pháp thủ công như ghi chép bằng sổ sách hoặc sử dụng các phần mềm phổ thông như Excel. Những cách làm này thường tiềm ẩn nhiều rủi ro như mất dữ liệu, sai lệch số liệu, khó khăn trong việc truy xuất thông tin, và không đảm bảo tính đồng bộ trong quản lý kho hàng, đơn hàng, khách hàng và doanh thu. Điều này dẫn đến việc giảm năng suất lao động và ảnh hưởng trực tiếp đến hiệu quả kinh doanh.
 Xuất phát từ nhu cầu thực tiễn đó, đề tài “Phần mềm quản lý cửa hàng đồ điện tử” được thực hiện nhằm xây dựng một hệ thống phần mềm hỗ trợ quản lý toàn diện cho các cửa hàng kinh doanh mặt hàng điện tử như: điện thoại, ipad, máy tính, laptop, RAM, ổ cứng, và các linh kiện điện tử khác,... Phần mềm được thiết kế theo mô hình ba lớp (3-Layer Architecture), kết hợp cùng các công nghệ hiện đại và công cụ hỗ trợ phát triển phần mềm nhằm tạo ra một giải pháp có tính ứng dụng cao, dễ sử dụng, dễ bảo trì và mở rộng trong tương lai.
