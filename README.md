@@ -332,8 +332,9 @@ optionsBuilder.UseSqlServer("Data Source=.;Database=ElectronsStore;Integrated Se
 }
 }
 }
+
 Database initialization command using Entity Framework Core Migration:
-Add-Migration KhoiTaoCSDL
+Add-Migration CreateDatabase
 Update-Database
 Add-Migration KhoiTaoCSDL: create migration file from defined entities.
 Update-Database: apply migration, create actual database. This allows to build database in sync with code, easy to maintain, support rollback when needed.
