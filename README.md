@@ -1,5 +1,5 @@
 ## INTRODUCTION
-#INTRODUCTION TO THE TOPIC
+### INTRODUCTION TO THE TOPIC
 #Problem statement
 In the current context, information technology is growing strongly and playing an important role in most areas of life, including the fields of commerce and sales management. In particular, for retail stores such as electronics stores, the need to computerize management processes is an inevitable requirement to improve business efficiency, save costs, minimize errors and increase competitiveness in the market.
 In fact, many small and medium-sized stores today still manage business activities through manual methods such as recording in books or using common software such as Excel. These methods often pose many risks such as data loss, data errors, difficulties in retrieving information, and failure to ensure consistency in warehouse, order, customer and revenue management. This leads to a decrease in labor productivity and directly affects business efficiency.
