@@ -1,4 +1,4 @@
-##. INTRODUCTION
+## INTRODUCTION
 #INTRODUCTION TO THE TOPIC
 #Problem statement
 In the current context, information technology is growing strongly and playing an important role in most areas of life, including the fields of commerce and sales management. In particular, for retail stores such as electronics stores, the need to computerize management processes is an inevitable requirement to improve business efficiency, save costs, minimize errors and increase competitiveness in the market.
