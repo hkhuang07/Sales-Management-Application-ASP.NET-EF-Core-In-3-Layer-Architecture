@@ -16,7 +16,6 @@ To initialize the database and get the application running locally, follow these
 Apply Entity Framework Core Migrations:
 
 ```bash
-Copy code
 Add-Migration KhoiTaoCSDL
 Update-Database
 ```
