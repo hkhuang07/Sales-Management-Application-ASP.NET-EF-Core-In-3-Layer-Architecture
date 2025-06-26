@@ -1,4 +1,4 @@
-# ⚡ Electronics Store Management System (.NET 8, WinForms, EF Core)
+# ⚡ Sales Management System (.NET 8, WinForms, EF Core)
 
 > 🚀 **Transforming retail management for the digital era!**  
 > Say goodbye to manual tracking and hello to a seamless, modern inventory and sales system tailored for electronic stores. Built on robust technologies like .NET 8, WinForms, and EF Core — this project sets the standard for desktop retail management solutions.
@@ -16,7 +16,7 @@ To initialize the database and get the application running locally, follow these
 Apply Entity Framework Core Migrations:
 
 ```bash
-Add-Migration KhoiTaoCSDL
+Add-Migration CreateDatabase
 Update-Database
 ```
 If you are using a factory pattern (recommended), make sure your ElectronicsStoreContextFactory is implemented correctly to allow design-time DBContext creation.
