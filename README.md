@@ -1,6 +1,6 @@
 # ⚡ Sales Management System 
-Framework: .NET 8, WinForms, ASP.NET(EF Core)
-Model: 3-Layer-Architecture
+## Framework: .NET 8, WinForms, ASP.NET(EF Core)
+## Model: 3-Layer-Architecture
 
 > 🚀 **Transforming retail management for the digital era!**  
 > Say goodbye to manual tracking and hello to a seamless, modern inventory and sales system tailored for electronic stores. Built on robust technologies like .NET 8, WinForms, and EF Core — this project sets the standard for desktop retail management solutions.
