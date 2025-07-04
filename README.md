@@ -6,6 +6,29 @@
 > Say goodbye to manual tracking and hello to a seamless, modern inventory and sales system tailored for electronic stores. Built on robust technologies like .NET 8, WinForms, and EF Core — this project sets the standard for desktop retail management solutions.
 
 ---
+## 📖 Project Overview
+<p align="center">
+  <img src="demo/Sale.png" width="400" height="250">
+  <img src="demo/Sale01.png" width="400" height="250"> </br>
+  <img src="demo/products.png" width="400" height="250"> 
+  <img src="demo/categories.png" width="400" height="250"></br>
+  <img src="demo/manufacturers.png" width="400" height="250">
+  <img src="demo/employees.png" width="400" height="250"></br>
+  <img src="demo/customers.png" width="400" height="250">
+  <img src="demo/orders.png" width="400" height="250"></br>
+  <img src="demo/orderdetails.png" width="400" height="250">
+  <img src="demo/printorder.png" width="400" height="250"></br>
+  <img src="demo/productstatistics.png" width="400" height="250">
+  <img src="demo/revenuestatistics.png" width="400" height="250"></br>
+  <img src="demo/login.png" width="400" height="250">
+  <img src="demo/changepass.png" width="400" height="250"></br>
+  <img src="demo/main.png" width="400" height="250">
+  <img src="demo/flash.png" width="400" height="250"></br>
+  <img src="demo/softwareinfor.png" width="400" height="250">
+  <img src="demo/error403.PNG" width="400" height="250"></br>
+</p>
+
+--- 
 
 ## 📥 Getting Started
 
@@ -17,10 +40,10 @@ To initialize the database and get the application running locally, follow these
    ```
 Apply Entity Framework Core Migrations:
 
-```bash
-Add-Migration CreateDatabase
-Update-Database
-```
+   ```bash
+   Add-Migration CreateDatabase
+   Update-Database
+   ```
 If you are using a factory pattern (recommended), make sure your ElectronicsStoreContextFactory is implemented correctly to allow design-time DBContext creation.
 
 📌 Project Overview
