@@ -10,6 +10,13 @@
 <p align="center">
   <img src="demo/Sale.png" width="400" height="250">
   <img src="demo/Sale01.png" width="400" height="250"> </br>
+  
+  <img src="demo/toolbarsystem.png" width="800" height="100"></br>
+  <img src="demo/toolbarmanager.png" width="800" height="100"></br>
+  <img src="demo/toolbarorder.png" width="800" height="100"></br>
+  <img src="demo/toolbarreport.png" width="800" height="100"></br>
+  <img src="demo/toolbarhelp.png" width="800" height="100"></br>
+
   <img src="demo/products.png" width="400" height="250"> 
   <img src="demo/categories.png" width="400" height="250"></br>
   <img src="demo/manufacturers.png" width="400" height="250">
