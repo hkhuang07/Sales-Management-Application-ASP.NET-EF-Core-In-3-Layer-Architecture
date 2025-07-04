@@ -25,7 +25,6 @@
   <img src="demo/main.png" width="400" height="250">
   <img src="demo/flash.png" width="400" height="250"></br>
   <img src="demo/softwareinfor.png" width="400" height="250">
-  <img src="demo/error403.PNG" width="400" height="250"></br>
 </p>
 
 --- 
