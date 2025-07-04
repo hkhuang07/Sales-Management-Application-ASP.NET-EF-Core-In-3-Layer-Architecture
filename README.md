@@ -61,6 +61,11 @@ Manage the entire lifecycle of orders: create, update, and delete orders and the
   <em>The main Point of Sale (POS) interface.</em>
 </p>
 <p align="center">
+  <img src="demo/Sale01.png" alt="Sales Interface" width="700">
+  <br>
+  <em>The main Point of Sale (POS) interface.</em>
+</p>
+<p align="center">
   <img src="demo/orders.png" alt="Order List" width="400">
   <img src="demo/orderdetails.png" alt="Order Details" width="400">
   <br>
