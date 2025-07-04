@@ -1,5 +1,5 @@
 # ⚡ Sales Management System Software
-## Framework: .NET 8, WinForms, ASP.NET (EF Core)
+## Framework: .NET 8, WinForms, ASP.NET (Entity Framework Core)
 ## Model: 3-Layer-Architecture
 
 > 🚀 **Transforming retail management for the digital era!**
