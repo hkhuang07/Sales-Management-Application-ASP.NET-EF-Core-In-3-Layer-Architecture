@@ -145,8 +145,10 @@ To deploy and run this project on your local machine, please follow these steps:
 Open Git Bash or Command Prompt and clone the repository to your local machine:
 
 ```bash
-git clone [https://github.com/hkhuang07/Sales-Management-Application-ASP.NET-EF-Core-In-3-Layer-Architecture.git](https://github.com/hkhuang07/Sales-Management-Application-ASP.NET-EF-Core-In-3-Layer-Architecture.git)
+git clone [https://github.com/hkhuang07/Sales-Management-Application-ASP.NET-EF-Core-In-3-Layer-Architecture.git]
+
 ```
+(https://github.com/hkhuang07/Sales-Management-Application-ASP.NET-EF-Core-In-3-Layer-Architecture.git)
 ### 3. Navigate to the project directory
 ```Bash
 
@@ -328,11 +330,11 @@ This project has significant potential for further development and expansion:
 ## 👨‍💻 Developer Info
 
 * **Author:** Huỳnh Quốc Huy
-* **Project ID:** DTH225650
+* **Student ID:** DTH225650
 * **University:** An Giang University – Faculty of Information Technology
 * **Mentors:** Nguyễn Hoàng Tùng
 * **Date:** May 2025
-* **GitHub Profile:** [hkhuang07](https://github.com/hkhuang07)
+* **GitHub Profile:** [https://github.com/hkhuang07](https://github.com/hkhuang07)
 
 ---
 
