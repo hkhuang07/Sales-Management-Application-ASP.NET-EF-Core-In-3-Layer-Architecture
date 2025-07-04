@@ -145,12 +145,12 @@ To deploy and run this project on your local machine, please follow these steps:
 Open Git Bash or Command Prompt and clone the repository to your local machine:
 
 ```bash
-git clone [https://github.com/hkhuang07/Help-Center-for-Sales-Management-App.git](https://github.com/hkhuang07/Help-Center-for-Sales-Management-App.git)
+git clone [https://github.com/hkhuang07/Sales-Management-Application-ASP.NET-EF-Core-In-3-Layer-Architecture.git](https://github.com/hkhuang07/Sales-Management-Application-ASP.NET-EF-Core-In-3-Layer-Architecture.git)
 ```
 ### 3. Navigate to the project directory
 ```Bash
 
-cd Help-Center-for-Sales-Management-App
+cd Sales-Management-Application-ASP.NET-EF-Core-In-3-Layer-Architecture
 (Or the path to the project root directory containing the .sln file)
 ```
 ### 4. Restore NuGet packages
