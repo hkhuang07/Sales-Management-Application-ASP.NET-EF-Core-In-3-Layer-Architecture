@@ -8,14 +8,7 @@
 ---
 
 ## 📖 Project Overview
-
 This is a comprehensive sales management system, specifically designed for electronic stores. The project is built upon a solid 3-Layer Architecture, utilizing .NET 8 and Entity Framework Core 8, ensuring scalability, easy maintenance, and high performance. The system aims to provide a robust and efficient retail management solution, ready for future deployment as a Client-Server model.
-
-<p align="center">
-  <img src="demo/main.png" alt="Main Application Window" width="700">
-  <br>
-  <em>The main application interface – where all functionalities are intuitively connected.</em>
-</p>
 
 ---
 
@@ -27,7 +20,13 @@ See the application in action with these animated demonstrations:
   <h3>Sales Workflow: From Search to Invoice</h3>
   <img src="demo/sales.gif" alt="Sales Workflow" width="800">
   <br>
-  <em>A seamless sales process: **Tìm kiếm** sản phẩm theo tên hoặc lọc theo danh mục/nhà sản xuất &rarr; **Chọn sản phẩm** và thêm vào giỏ hàng &rarr; Bấm **Order** để tiếp tục &rarr; **Form xác nhận** chi tiết đơn hàng, tùy chọn in hóa đơn, và thêm/sửa thông tin khách hàng &rarr; **Order thành công** &rarr; (Tùy chọn) **Xuất hóa đơn**.</em>
+  <em>A seamless sales process: **Search** products by name  &rarr; **Select Products** and add to orderdetails list &rarr; Click **Order** to continue &rarr; **Confirm Form** invoice printing options, and add/edit customer information &rarr; **Confirm** to Success Order &rarr; (Optional) **Invoice**.</em>
+</p>
+
+<p align="center">
+  <img src="demo/main.png" alt="Main Application Window" width="700">
+  <br>
+  <em>The main application interface – where all functionalities are intuitively connected.</em>
 </p>
 
 <p align="center">
