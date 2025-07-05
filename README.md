@@ -19,6 +19,67 @@ This is a comprehensive sales management system, specifically designed for elect
 
 ---
 
+## 📸 Visualization
+
+See the application in action with these animated demonstrations:
+
+<p align="center">
+  <h3>Sales Workflow: From Search to Invoice</h3>
+  <img src="demo/sales.gif" alt="Sales Workflow" width="800">
+  <br>
+  <em>A seamless sales process: **Tìm kiếm** sản phẩm theo tên hoặc lọc theo danh mục/nhà sản xuất &rarr; **Chọn sản phẩm** và thêm vào giỏ hàng &rarr; Bấm **Order** để tiếp tục &rarr; **Form xác nhận** chi tiết đơn hàng, tùy chọn in hóa đơn, và thêm/sửa thông tin khách hàng &rarr; **Order thành công** &rarr; (Tùy chọn) **Xuất hóa đơn**.</em>
+</p>
+
+<p align="center">
+  <h3>Authentication & Security</h3>
+  <img src="demo/login.gif" alt="Login visualization" width="400">
+  <img src="demo/changepass.gif" alt="Change Password visualization" width="400">
+  <br>
+  <em>Secure user login and password management.</em>
+</p>
+
+<p align="center">
+  <h3>Product & Inventory Management</h3>
+  <img src="demo/products.gif" alt="Products visualization" width="400">
+  <img src="demo/categories.gif" alt="Categories visualization" width="400">
+  <img src="demo/manufacturer.gif" alt="Manufacturer visualization" width="400">
+  <br>
+  <em>Comprehensive management of products, categories, and manufacturers.</em>
+</p>
+
+<p align="center">
+  <h3>Order & Details Management</h3>
+  <img src="demo/order-orderdetails.gif" alt="Order & OrderDetails visualization" width="800">
+  <br>
+  <em>Viewing and managing order lists and their detailed items.</em>
+</p>
+
+<p align="center">
+  <h3>Customer & Employee Management</h3>
+  <img src="demo/customer.gif" alt="Customer visualization" width="400">
+  <img src="demo/employees.gif" alt="Employees visualization" width="400">
+  <br>
+  <em>Managing customer profiles and employee accounts.</em>
+</p>
+
+<p align="center">
+  <h3>Reporting & Statistics</h3>
+  <img src="demo/revenuestatistic.gif" alt="Revenue Statistics visualization" width="400">
+  <img src="demo/productstatistic.gif" alt="Product Statistics visualization" width="400">
+  <br>
+  <em>Visual insights into revenue trends and product performance.</em>
+</p>
+
+<p align="center">
+  <h3>Information & Help Center</h3>
+  <img src="demo/softwareinfor.gif" alt="Software Information visualization" width="400">
+  <img src="demo/help.gif" alt="Help Center visualization" width="400">
+  <br>
+  <em>Accessing software information and the comprehensive help center.</em>
+</p>
+
+---
+
 ## 🚀 Key Features
 
 The system offers a wide range of powerful features to efficiently manage electronic store operations:
@@ -112,19 +173,28 @@ Provides detailed user guides and information about the software version, author
 
 ---
 
+## 📚 User Guide & Help Center
+For comprehensive guidance on using the Sales Management System Software, including step-by-step instructions and detailed explanations of all features, please visit our dedicated Help Center:
+
+**[Sales Management App Help Center](https://hkhuang07.github.io/Help-Center-for-Sales-Management-App/)**
+
+You can also access this directly from the application's help menu.
+
+---
+
 ## 🏗️ Technology Stack
 
 The project is built on a modern and robust technology stack, strictly adhering to the 3-Layer Architecture model:
 
-| Layer             | Technology                                   | Description                                                                                                                                                 |
-| :---------------- | :------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Presentation (UI)** | `.NET 8 WinForms`                            | The user interface is built using WinForms, handling user interaction and displaying data from DTOs.                                        |
-| **Business Logic (BLL)** | `C# Services`, `AutoMapper`, `DTOs`          | Contains the core business logic, data validation, and transformation between Entities and DTOs, interacting with the Repository layer.           |
+| Layer | Technology | Description |
+| :------------------------ | :------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Presentation (UI)** | `.NET 8 WinForms` | The user interface is built using WinForms, handling user interaction and displaying data from DTOs. |
+| **Business Logic (BLL)** | `C# Services`, `AutoMapper`, `DTOs` | Contains the core business logic, data validation, and transformation between Entities and DTOs, interacting with the Repository layer. |
 | **Data Access (DAL)** | `Entity Framework Core 8`, `LINQ`, `SQL Server` | Implements the Repository Pattern, using EF Core to manage all database interactions (CRUD, querying), with Code-First and Migrations support. |
-| Reporting         | `ReportViewerCore.WinForms`, `ClosedXML`     | Powerful tools for generating dynamic reports (RDLC) and exporting data to Excel format.                                                              |
-| Dependency Injection | `Microsoft.Extensions.DependencyInjection`   | Helps manage dependencies between layers, increasing modularity and testability.                                                                             |
-| Database          | `SQL Server 2022`                            | Relational database management system used for storing and managing data.                                                                         |
-| ORM               | `Entity Framework Core 8`                    | Modern ORM framework, allowing interaction with the database using C# objects, with strong support for LINQ and features like Async, Caching, Tracking. |
+| Reporting | `ReportViewerCore.WinForms`, `ClosedXML` | Powerful tools for generating dynamic reports (RDLC) and exporting data to Excel format. |
+| Dependency Injection | `Microsoft.Extensions.DependencyInjection` | Helps manage dependencies between layers, increasing modularity and testability. |
+| Database | `SQL Server 2022` | Relational database management system used for storing and managing data. |
+| ORM | `Entity Framework Core 8` | Modern ORM framework, allowing interaction with the database using C# objects, with strong support for LINQ and features like Async, Caching, Tracking. |
 
 ### 💡 Design Highlights
 
