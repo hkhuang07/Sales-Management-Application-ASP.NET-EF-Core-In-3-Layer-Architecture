@@ -73,7 +73,7 @@ See the application in action with these animated demonstrations:
 <p align="center">
   <h3>Information & Help Center</h3>
   <img src="demo/softwareinfor.gif" alt="Software Information visualization" width="400">
-  <img src="demo/help.gif" alt="Help Center visualization" width="400">
+  <img src="demo/helpcenter.gif" alt="Help Center visualization" width="400">
   <br>
   <em>Accessing software information and the comprehensive help center.</em>
 </p>
