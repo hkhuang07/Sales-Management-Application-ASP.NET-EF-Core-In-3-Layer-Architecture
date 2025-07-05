@@ -24,6 +24,7 @@ See the application in action with these animated demonstrations:
 </p>
 
 <p align="center">
+  <h3>Main Interface</h3>
   <img src="demo/main.png" alt="Main Application Window" width="700">
   <br>
   <em>The main application interface – where all functionalities are intuitively connected.</em>
