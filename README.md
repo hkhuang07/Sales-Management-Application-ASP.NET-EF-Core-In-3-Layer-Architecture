@@ -5,8 +5,6 @@ This project is an **Electronic Store Management Software** developed to automat
 
 The primary goal is to deliver an intuitive management application for Windows Forms, equipped with essential functionalities to empower employees and store owners to perform tasks quickly and accurately, thereby enhancing overall business efficiency. [cite: 1218, 1219, 1221]
 
-## 🚀 Visualized
-
 Explore the application's interface and functionalities through these visual demonstrations:
 ![Sales Flow Demo](demo/video/sales.gif)
 
@@ -16,18 +14,11 @@ Secure login and password management for users.
 
 ![Login Screen](demo/video/login.gif)
 
-![Login Interface](demo/login.png)
-![Change Password](demo/changepass.png)
-
 ### Order Processing
 
 Handle customer orders and view details seamlessly.
 
 ![Order and Order Details Flow](demo/video/order-orderdetails.gif)
-
-![Orders Interface](demo/orders.png)
-![Order Details Interface](demo/orderdetails.png)
-![Print Order](demo/printorder.png)
 
 ### Data Management
 
@@ -36,17 +27,11 @@ Manage your products, categories, and manufacturers efficiently.
 **Products**
 ![Products Management](demo/video/products.gif)
 
-![Products Interface](demo/products.png)
-
 **Categories**
 ![Categories Management](demo/video/categories.gif)
 
-![Categories Interface](demo/categories.png)
-
 **Manufacturers**
 ![Manufacturers Management](demo/video/manufacturer.gif)
-
-![Manufacturers Interface](demo/manufacturers.png)
 
 ### User Management
 
@@ -55,12 +40,8 @@ Manage your employees and customer database.
 **Employees**
 ![Employees Management](demo/video/employees.gif)
 
-![Employees Interface](demo/employees.png)
-
 **Customers**
 ![Customers Management](demo/video/customer.gif)
-
-![Customers Interface](demo/customers.png)
 
 ### Reporting & Statistics
 
@@ -69,12 +50,8 @@ Gain insights with detailed product and revenue statistics.
 **Product Statistics**
 ![Product Statistics Report](demo/video/productstatistic.gif)
 
-![Product Statistics Interface](demo/productstatistics.png)
-
 **Revenue Statistics**
 ![Revenue Statistics Report](demo/video/revenuestatistic.gif)
-
-![Revenue Statistics Interface](demo/revenuestatistics.png)
 
 ### Help & About
 
@@ -83,24 +60,6 @@ Access software information and help resources.
 ![Flash Screen](demo/video/flash.gif)
 ![Help Center](demo/video/helpercenter.gif)
 ![Software Information](demo/video/softwareinfor.gif)
-
-![Help Window](demo/help.PNG)
-![Splash Screen](demo/flash.png)
-![Software Info Window](demo/softwareinfor.png)
-
-### Sales
-
-Streamlined sales operations.
-
-![Sales Process Screenshot](demo/Sale.png)
-![Sales Process Screenshot 2](demo/Sale01.png)
-![Confirm Order](demo/confirm.png)
-
-### Main Interface & Toolbars
-
-The main application window provides intuitive navigation through various toolbars and panels.
-
-![Main Window](demo/main.png)
 
 ## ✨ Key Features
 
@@ -171,6 +130,74 @@ This project stands out due to several key aspects:
 * **Intuitive User Experience**: Designed with a user-friendly WinForms interface, focusing on ease of use and efficient workflows for daily operations. Features like login history, search capabilities, and direct data binding contribute to a smooth user experience. [cite: 1218]
 * **Powerful Reporting**: Integration with ReportViewer and ClosedXML allows for detailed statistical analysis and easy export of data, crucial for business insights. [cite: 1228, 1239, 1240]
 
+## 🚀 Visualized
+
+Explore the application's interface and functionalities through these visual demonstrations:
+### Authentication
+
+Secure login and password management for users.
+![Login Interface](demo/login.png)
+![Change Password](demo/changepass.png)
+
+### Order Processing
+
+Handle customer orders and view details seamlessly.
+![Orders Interface](demo/orders.png)
+![Order Details Interface](demo/orderdetails.png)
+![Print Order](demo/printorder.png)
+
+### Data Management
+
+Manage your products, categories, and manufacturers efficiently.
+
+**Products**
+![Products Interface](demo/products.png)
+
+**Categories**
+![Categories Interface](demo/categories.png)
+
+**Manufacturers**
+![Manufacturers Interface](demo/manufacturers.png)
+
+### User Management
+
+Manage your employees and customer database.
+
+**Employees**
+![Employees Interface](demo/employees.png)
+
+**Customers**
+![Customers Interface](demo/customers.png)
+
+### Reporting & Statistics
+
+Gain insights with detailed product and revenue statistics.
+
+**Product Statistics**
+![Product Statistics Interface](demo/productstatistics.png)
+
+**Revenue Statistics**
+![Revenue Statistics Interface](demo/revenuestatistics.png)
+
+### Help & About
+
+Access software information and help resources.
+![Help Window](demo/help.PNG)
+![Splash Screen](demo/flash.png)
+![Software Info Window](demo/softwareinfor.png)
+
+### Sales
+
+Streamlined sales operations.
+![Sales Process Screenshot](demo/Sale.png)
+![Sales Process Screenshot 2](demo/Sale01.png)
+![Confirm Order](demo/confirm.png)
+
+### Main Interface
+
+The main application window provides intuitive navigation through various toolbars and panels.
+
+![Main Window](demo/main.png)
 ## ⚙️ Setup and Deployment
 
 Follow these steps to clone and run the project locally.
