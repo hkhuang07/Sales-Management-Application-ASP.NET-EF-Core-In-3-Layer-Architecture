@@ -57,8 +57,7 @@ Gain insights with detailed product and revenue statistics.
 
 Access software information and help resources.
 
-![Flash Screen](demo/video/flash.gif)
-![Help Center](demo/video/helpercenter.gif)
+![Help Center](demo/video/helpcenter.gif)
 ![Software Information](demo/video/softwareinfor.gif)
 
 ## ✨ Key Features
