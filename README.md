@@ -219,14 +219,8 @@ Option A: Create Database from Migrations
 
 If you don't have the database set up, you can create it using EF Core migrations:
 ```
-# Navigate to the project directory containing your DbContext (e.g., your DAL project)
-cd YourProjectName.DAL # Replace YourProjectName.DAL with the actual path to your Data Access Layer project
-
-# Add a new migration (only if you have changes or if it's the first time)
-dotnet ef migrations add InitialCreate -o Migrations
-
-# Apply migrations to create/update the database
-dotnet ef database update
+Add-Migration InitialCreate -OutputDir Migrations
+Update-Database
 ```
 Note: Ensure you have the dotnet-ef tool installed globally: dotnet tool install --global dotnet-ef
 
@@ -246,6 +240,7 @@ Example (check OnConfiguring method in ElectronicsStoreContext.cs for exact conn
 Open the solution (.sln file) in Visual Studio 2022 and run the project.
 
 ## Author
-- Name: Huynh Quoc Huy
-- GitHub Profile: hkhuang07
-- Repository: Sales-Management-Application-ASP.NET-EF-Core-In-3-Layer-Architecture
+
+* **Name**: Huynh Quoc Huy
+* **GitHub Profile**: [hkhuang07](https://github.com/hkhuang07/)
+* **Repository**: [Sales-Management-Application-ASP.NET-EF-Core-In-3-Layer-Architecture](https://github.com/hkhuang07/Sales-Management-Application-ASP.NET-EF-Core-In-3-Layer-Architecture)
