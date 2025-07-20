@@ -1,9 +1,6 @@
-# Sales Management System Software
-
-![Sales Flow Demo](demo/video/sales.gif)
+# Sales Management System Software - ASP.NET (Entity Framwork Core) In 3 Layer Architecture
 
 ## 🎯 Project Overview
-
 This project is an **Electronic Store Management Software** developed to automate and optimize the management processes for retail stores, especially those dealing with electronic goods like phones, laptops, and various components. In today's rapidly evolving IT landscape, manual management methods (like notebooks or basic Excel sheets) are prone to data loss, inconsistencies, and inefficiencies. This software addresses these challenges by providing a comprehensive, user-friendly, and robust solution. [cite: 1210, 1211, 1212, 1213, 1214, 1215, 1216]
 
 The primary goal is to deliver an intuitive management application for Windows Forms, equipped with essential functionalities to empower employees and store owners to perform tasks quickly and accurately, thereby enhancing overall business efficiency. [cite: 1218, 1219, 1221]
@@ -11,6 +8,7 @@ The primary goal is to deliver an intuitive management application for Windows F
 ## 🚀 Visualized
 
 Explore the application's interface and functionalities through these visual demonstrations:
+![Sales Flow Demo](demo/video/sales.gif)
 
 ### Authentication
 
