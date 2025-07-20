@@ -84,8 +84,8 @@ Access software information and help resources.
 ![Help Center](demo/video/helpercenter.gif)
 ![Software Information](demo/video/softwareinfor.gif)
 
-![Splash Screen](demo/flash.png)
 ![Help Window](demo/help.PNG)
+![Splash Screen](demo/flash.png)
 ![Software Info Window](demo/softwareinfor.png)
 
 ### Sales
@@ -101,19 +101,7 @@ Streamlined sales operations.
 The main application window provides intuitive navigation through various toolbars and panels.
 
 ![Main Window](demo/main.png)
-![System Toolbar](demo/toolbarsystem.png)
-![Order Toolbar](demo/toolbarorder.png)
-![Manager Toolbar](demo/toolbarmanager.png)
-![Report Toolbar](demo/toolbarreport.png)
-![Help Toolbar](demo/toolbarhelp.png)
-![Toolbox 01](demo/toolbox01.png)
-![Toolbox 02](demo/toolbox02.png)
-![Backup Restore Tab](demo/backuprestoretab.png)
-![Backup Restore Menu](demo/backuprestoremnu.png)
-![Backup Restore Toolbar](demo/backuprestoretoolbar.png)
-![Exit Confirmation](demo/exit.png)
-![Logout Option 1](demo/logout.png)
-![Logout Option 2](demo/logout02.png)
+
 ## ✨ Key Features
 
 Our Electronic Store Management Software offers a rich set of features designed to streamline daily operations:
