@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Backup & Restore - HK.Huang Sales Management Software Guide</title>
+    <link rel="icon" href="favicon.ico">
+
+    <style>
+        /* Custom CSS for the guide page */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 960px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-body h2,
+        .card-body h3 {
+            color: #0056b3;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .card-body ul {
+            margin-bottom: 15px;
+        }
+
+        .card-body ul li {
+            margin-bottom: 8px;
+        }
+
+        .card-body strong {
+            color: #343a40;
+        }
+
+        .img-fluid {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .alert-info {
+            background-color: #e0f2f7;
+            border-color: #bee5eb;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .note {
+            font-style: italic;
+            color: #6c757d;
+            margin-top: 10px;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar"></div>
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <i class="bi bi-database-fill-gear me-2"></i>Database Backup and Restore User Guide
+            </div>
+            <div class="card-body">
+                <p class="card-text">This guide provides instructions on how to perform **Database Backup** and **Restore** operations in the **HK.Huang Sales Management Software**. These functions are critical for data protection and recovery in case of system failures or data loss.</p>
+
+                <h2 class="mt-4"><i class="bi bi-arrow-repeat me-2"></i>Understanding Backup and Restore</h2>
+                <ul>
+                    <li><strong class="text-primary">Database Backup:</strong> This process creates a copy of your current database at a specific point in time. This backup file (<span class="highlight">.bak</span> extension) can be used to restore your data if the original database becomes corrupted or is lost. Regular backups are essential for business continuity.</li>
+                    <li><strong class="text-primary">Database Restore:</strong> This process overwrites your current database with data from a previously created backup file. It is used to recover your data to a prior state.</li>
+                </ul>
+
+                <h2 class="mt-4"><i class="bi bi-boxes me-2"></i>Accessing Backup and Restore Functions</h2>
+                <p>You can access the Backup and Restore functions through various entry points in the application:</p>
+                
+                <h3>1. Via Menu Bar</h3>
+                <img src="images/backuprestoremnu.png" class="img-fluid mx-auto d-block" alt="Screenshot showing Backup and Restore options in the menu bar" />
+                <p class="note text-center">Image: Backup and Restore options available in the application's menu (e.g., under 'File' or 'Tools').</p>
+
+                <h3>2. Via Toolbar Buttons</h3>
+                <img src="images/backuprestoretoolbar.png" class="img-fluid mx-auto d-block" alt="Screenshot showing Backup and Restore buttons on the toolbar" />
+                <p class="note text-center">Image: Dedicated buttons for Backup and Restore on the main toolbar for quick access.</p>
+
+                <h3>3. Via Management Tab</h3>
+                <img src="images/backuprestoretab.png" class="img-fluid mx-auto d-block" alt="Screenshot showing Backup and Restore options within a tab (e.g., 'Management')" />
+                <p class="note text-center">Image: Backup and Restore functionalities grouped under a specific tab, such as 'Management'.</p>
+
+                <h2 class="mt-4"><i class="bi bi-cloud-arrow-up-fill me-2"></i>How to Perform a Database Backup</h2>
+                <p>To create a backup of your database:</p>
+                <ol>
+                    <li>Click on the **Backup** option from the menu bar (<span class="highlight">mnuBackup_Click</span>), toolbar, or relevant tab.</li>
+                    <li>A **Browse For Folder** dialog box will appear (triggered by <span class="highlight">FolderBrowserDialog</span>). Navigate to the desired location where you want to save your backup file.</li>
+                    <li>Click <strong class="text-primary">OK</strong> to confirm the folder selection.</li>
+                    <li>The system will then create a database backup file (e.g., <span class="highlight">ElectronicsStore_YYYYMMDD_HHMMSS.bak</span>) in the chosen directory.</li>
+                    <li>A notification message will confirm if the "Data backup successful!" or "Data backup failed!" (as handled by the <span class="highlight">MessageBox</span>).</li>
+                </ol>
+                <div class="alert alert-info" role="alert">
+                    <i class="bi bi-lightbulb-fill me-2"></i> <strong>Tip:</strong> Choose a secure and easily accessible location for your backups, preferably on a separate drive or network location.
+                </div>
+
+                <h2 class="mt-4"><i class="bi bi-cloud-arrow-down-fill me-2"></i>How to Perform a Database Restore</h2>
+                <p>To restore your database from a backup file:</p>
+                <ol>
+                    <li>Click on the **Restore** option from the menu bar (<span class="highlight">mnuRestore_Click</span>), toolbar, or relevant tab.</li>
+                    <li>An **Open File** dialog box will appear (triggered by <span class="highlight">OpenFileDialog</span>), prompting you to select a backup file. The dialog will filter for files with the <span class="highlight">.bak</span> extension.</li>
+                    <li>Navigate to the location of your backup file and select the desired <span class="highlight">.bak</span> file.</li>
+                    <li>Click <strong class="text-primary">Open</strong>.</li>
+                    <li>The system will then overwrite your current database with the data from the selected backup file.</li>
+                    <li>A notification message will confirm if the "Data recovery successful!" or "Data recovery failed!!" (as handled by the <span class="highlight">MessageBox</span>).</li>
+                </ol>
+                <div class="alert alert-danger" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i> <strong>Warning:</strong>
+                    <br>
+                    Restoring a database will **overwrite** all existing data with the data from the backup file. Any changes made since the last backup will be lost. Ensure you have a recent backup of your current data if you are unsure, or proceed with caution. Only perform a restore operation when absolutely necessary.
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('#navbar').load('inc/navbar.html');
+            $('#footer').load('inc/footer.html');
+        });
+    </script>
+</body>
+
+</html>

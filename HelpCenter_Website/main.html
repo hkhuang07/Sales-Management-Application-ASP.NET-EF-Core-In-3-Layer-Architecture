@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./style.css" />
+    <title>Main Interface - HK.Huang Sales Management Software Guide</title>
+	<link rel="icon" href="favicon.ico">
+    <style>
+        /* Custom CSS for the guide page */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 960px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 10000;
+        }
+
+        .card-body h2,
+        .card-body h3 {
+            color: #0056b3;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .card-body ul {
+            margin-bottom: 15px;
+        }
+
+        .card-body ul li {
+            margin-bottom: 8px;
+        }
+
+        .card-body strong {
+            color: #343a40;
+        }
+
+        .img-fluid {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .alert-info {
+            background-color: #e0f2f7;
+            border-color: #bee5eb;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .note {
+            font-style: italic;
+            color: #6c757d;
+            margin-top: 10px;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar"></div>
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <i class="bi bi-display me-2"></i>Main Interface User Guide
+            </div>
+            <div class="card-body">
+                <p class="card-text">Welcome to the detailed guide on using the Main Interface of **HK.Huang Sales Management Software**. This interface is the control center where you can access all functions and manage your business operations efficiently. This guide will help you understand each component and how to interact with them.</p>
+
+                <h2 class="mt-4"><i class="bi bi-image-fill me-2"></i>Main Interface Overview</h2>
+                <p>The main interface is designed to be intuitive, providing an overall view of the software's key modules. Please refer to the image below for a clearer visualization of the layout and location of the components:</p>
+                <img src="images/main.png" class="img-fluid mx-auto d-block" alt="Main interface of HK.Huang Sales Management Software" />
+                <p class="note text-center">Image: Main interface after successful login.</p>
+
+                <h2 class="mt-4"><i class="bi bi-person-fill me-2"></i>Account and Session Management</h2>
+
+                <h3>1. Logging into the system (<span class="highlight">mnuLogIn_Click</span>, <span class="highlight">LogIn()</span>)</h3>
+                <p>When starting the software, you will be prompted to log in. This process ensures data security and access control:</p>
+                <ul>
+                    <li><strong class="text-primary">Initialize and Display Login Form:</strong> The software will automatically display the login form (<span class="highlight">frmLogin</span>) upon startup.</li>
+                    <li><strong class="text-primary">Enter Information:</strong> You need to enter your <strong>Username</strong> and <strong>Password</strong> into the corresponding fields.</li>
+                    <li><strong class="text-primary">Information Check:</strong> The system will verify:
+                        <ul>
+                            <li>Username and password cannot be left blank.</li>
+                            <li>Username must exist in the system.</li>
+                            <li>Password must match the encrypted password of that account (using BCrypt for security).</li>
+                        </ul>
+                    </li>
+                    <li><strong class="text-primary">Notifications and Authorization:</strong>
+                        <ul>
+                            <li>If the login information is incorrect, an error message will be displayed (e.g., "Incorrect login name!" or "Incorrect password!"). You will be asked to re-enter.</li>
+                            <li>If login is successful, you will receive a welcome message ("Wellcome [Username] !").</li>
+                            <li>The system will automatically assign access rights based on the user's role (<strong>Administrator</strong> or <strong>Member</strong>) and enable/disable corresponding functions on the interface.</li>
+                            <li>The logged-in username will be displayed on the Status Bar of the main interface.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3>2. Logging out of the system (<span class="highlight">mnuLogout_Click</span>, <span class="highlight">NotLoggedIn()</span>)</h3>
+                <p>To ensure data security and end your session, you can log out:</p>
+                <ul>
+                    <li><strong class="text-primary">Confirm Logout:</strong> When you select the Logout function, a confirmation dialog will appear asking if you want to log out.</li>
+                    <li><strong class="text-primary">Close Child Forms:</strong> If any child windows (MDI children) are open, they will be automatically closed.</li>
+                    <li><strong class="text-primary">Restore State:</strong> The main interface will revert to the "not logged in" state (<span class="highlight">NotLoggedIn()</span>), disabling most functions and reactivating the Login button.</li>
+                </ul>
+
+                <h3>3. Change Password (<span class="highlight">mnuChangePass_Click</span>)</h3>
+                <p>You can change your password to enhance security:</p>
+                <ul>
+                    <li><strong class="text-primary">Login Required:</strong> This function is only available when you are logged in. If not, the system will warn you.</li>
+                    <li><strong class="text-primary">Open Change Password Form:</strong> A new window (<span class="highlight">frmChangePass</span>) will appear, allowing you to enter your old password and set a new one.</li>
+                    <li><strong class="text-primary">Specify User:</strong> The change password form will automatically recognize the current user's account to perform the change.</li>
+                </ul>
+
+                <h2 class="mt-4"><i class="bi bi-database-fill me-2"></i>Data Management (Backup & Restore)</h2>
+                <p>The software provides important tools for data backup and recovery, ensuring the safety and integrity of business information.</p>
+
+                <h3>1. Data Backup (<span class="highlight">mnuBackup_Click</span>)</h3>
+                <p>Regular data backup is crucial to prevent data loss due to unexpected incidents:</p>
+                <ul>
+                    <li><strong class="text-primary">Select Folder:</strong> A dialog box will appear asking you to choose a folder on your computer to store the backup file (.bak).</li>
+                    <li><strong class="text-primary">Backup Process:</strong> The system will perform the backup of the current database to the selected file.</li>
+                    <li><strong class="text-primary">Result Notification:</strong> Upon completion, you will receive a "Data backup successful!" or "Data backup failed!" message depending on the outcome.</li>
+                </ul>
+
+                <h3>2. Data Recovery (<span class="highlight">mnuRestore_Click</span>)</h3>
+                <p>This function allows you to restore data from a previous backup, useful when you need to revert to a specific data state or troubleshoot issues:</p>
+                <ul>
+                    <li><strong class="text-primary">Select Backup File:</strong> A dialog box will open for you to select the backup file (.bak) you want to restore.</li>
+                    <li><strong class="text-primary">Recovery Process:</strong> The system will proceed to restore the database from the selected file. <strong>Note:</strong> This process will OVERWRITE current data, so please ensure you have backed up your current data if needed.</li>
+                    <li><strong class="text-primary">Result Notification:</strong> Upon completion, you will receive a "Data recovery successful!" or "Data recovery failed!!".</li>
+                </ul>
+                <div class="alert alert-info" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i> <strong>Important Warning:</strong> Always back up your current data before performing a recovery operation to avoid unintended data loss.
+                </div>
+
+                <h2 class="mt-4"><i class="bi bi-tools me-2"></i>Key Management Functions</h2>
+                <p>The main interface provides menu items and quick access buttons to various management modules of the software. Depending on the user's permissions (Administrator or Member), some functions may be disabled.</p>
+
+                <h3>1. Sales (<span class="highlight">mnuSale_Click</span>)</h3>
+                <ul>
+                    <li><strong class="text-primary">Access:</strong> Opens the <span class="highlight">frmSale</span> window.</li>
+                    <li><strong class="text-primary">Description:</strong> This is the main module for performing sales transactions, creating invoices, selecting products, and processing payments.</li>
+                </ul>
+
+                <h3>2. Category Management (<span class="highlight">mnuCategories_Click</span>)</h3>
+                <ul>
+                    <li><strong class="text-primary">Access:</strong> Opens the <span class="highlight">frmCategories</span> window.</li>
+                    <li><strong class="text-primary">Description:</strong> Allows managing product categories (add, edit, delete categories). <strong>For Administrator only.</strong></li>
+                </ul>
+
+                <h3>3. Manufacturer Management (<span class="highlight">mnuManufacturers_Click</span>)</h3>
+                <ul>
+                    <li><strong class="text-primary">Access:</strong> Opens the <span class="highlight">frmManufacturers</span> window.</li>
+                    <li><strong class="text-primary">Description:</strong> Allows managing product manufacturer information (add, edit, delete). <strong>For Administrator only.</strong></li>
+                </ul>
+
+                <h3>4. Product Management (<span class="highlight">mnuProducts_Click</span>)</h3>
+                <ul>
+                    <li><strong class="text-primary">Access:</strong> Opens the <span class="highlight">frmProducts</span> window.</li>
+                    <li><strong class="text-primary">Description:</strong> Manages detailed product information in stock: add new, edit information, update inventory quantity.</li>
+                </ul>
+
+                <h3>5. Customer Management (<span class="highlight">mnuCustomers_Click</span>)</h3>
+                <ul>
+                    <li><strong class="text-primary">Access:</strong> Opens the <span class="highlight">frmCustomers</span> window.</li>
+                    <li><strong class="text-primary">Description:</strong> Manages customer information, including adding new customers, updating contact information, and purchase history.</li>
+                </ul>
+
+                <h3>6. Employee Management (<span class="highlight">mnuEmployees_Click</span>)</h3>
+                <ul>
+                    <li><strong class="text-primary">Access:</strong> Opens the <span class="highlight">frmEmployees</span> window.</li>
+                    <li><strong class="text-primary">Description:</strong> Manages accounts, information, roles, and permissions of employees in the system. <strong>For Administrator only.</strong></li>
+                </ul>
+
+                <h3>7. Order Management (<span class="highlight">mnuOrders_Click</span>)</h3>
+                <ul>
+                    <li><strong class="text-primary">Access:</strong> Opens the <span class="highlight">frmOrders</span> window.</li>
+                    <li><strong class="text-primary">Description:</strong> View and manage all created orders, including order status and details of purchased items.</li>
+                </ul>
+                <div class="alert alert-info" role="alert">
+                    <i class="bi bi-info-circle-fill me-2"></i> <strong>Tip:</strong> Each time you open a child form (e.g., Sale, Products, Customers...), if that form is already open, the system will bring it to the front instead of opening a new window, helping to manage the workspace more efficiently.
+                </div>
+
+                <h2 class="mt-4"><i class="bi bi-graph-up me-2"></i>Reports & Statistics</h2>
+                <p>Reporting and statistics functions help you gain an overview of business performance.</p>
+
+                <h3>1. Product Statistics (<span class="highlight">mnuProductStatistics_Click</span>)</h3>
+                <ul>
+                    <li><strong class="text-primary">Access:</strong> Opens the <span class="highlight">frmProductStatistics</span> window.</li>
+                    <li><strong class="text-primary">Description:</strong> Provides reports and charts on product performance, such as best-selling products, inventory products, etc. <strong>For Administrator only.</strong></li>
+                </ul>
+
+                <h3>2. Revenue Statistics (<span class="highlight">mnuRevenueStatistics_Click</span>)</h3>
+                <ul>
+                    <li><strong class="text-primary">Access:</strong> Opens the <span class="highlight">frmRevenueStatistics</span> window.</li>
+                    <li><strong class="text-primary">Description:</strong> Provides reports on revenue and profit over time, helping with financial analysis. <strong>For Administrator only.</strong></li>
+                </ul>
+
+                <h2 class="mt-4"><i class="bi bi-question-circle-fill me-2"></i>Help & Information</h2>
+
+                <h3>1. Software Information (<span class="highlight">mnuSoftwareInformation_Click</span>)</h3>
+                <ul>
+                    <li><strong class="text-primary">Access:</strong> Opens the <span class="highlight">AboutBox</span> window.</li>
+                    <li><strong class="text-primary">Description:</strong> Displays detailed information about the software version, developer, copyright, etc.</li>
+                </ul>
+
+                <h3>2. User Guide (<span class="highlight">mnuUserGuide_Click</span>)</h3>
+                <ul>
+                    <li><strong class="text-primary">Access:</strong> Opens a web browser and navigates to the main user guide page (`index.html` in your HelpURL directory).</li>
+                    <li><strong class="text-primary">Description:</strong> This is the access point to the entire software user manual, helping you find information about all functions.</li>
+                </ul>
+
+                <h3>3. Link to Developer (<span class="highlight">lblLink_Click</span>)</h3>
+                <ul>
+                    <li><strong class="text-primary">Access:</strong> Opens a web browser and navigates to the developer's GitHub page (<a href="https://github.com/hkhuang07" target="_blank">https://github.com/hkhuang07</a>).</li>
+                    <li><strong class="text-primary">Description:</strong> Provides a quick link to the developer's profile to view more projects or contact.</li>
+                </ul>
+
+                <h2 class="mt-4"><i class="bi bi-power me-2"></i>Exit Application (<span class="highlight">mnuExit_Click</span>)</h2>
+                <p>To completely exit the software:</p>
+                <ul>
+                    <li><strong class="text-primary">Confirm Exit:</strong> A confirmation dialog will ask if you want to exit the program.</li>
+                    <li><strong class="text-primary">Close Application:</strong> If confirmed, the application will close.</li>
+                </ul>
+
+                <div class="alert alert-info" role="alert">
+                    <i class="bi bi-lightbulb-fill me-2"></i> <strong>Note on User Permissions:</strong>
+                    <br>
+                    HK.Huang Sales Management Software clearly distinguishes permissions between <strong>Administrator</strong> and <strong>Member</strong>.
+                    <ul>
+                        <li><strong>Administrator:</strong> Has full access to all management functions (Categories, Manufacturers, Employees, Product Statistics, Revenue Statistics) and data management tasks (Backup, Restore).</li>
+                        <li><strong>Member:</strong> Only has access to functions necessary for daily work such as Sales, Product Management, Customer Management, Order Management. Administrative and statistical functions are disabled to ensure security and task assignment.</li>
+                    </ul>
+                    Please check the status bar or menu items/buttons to see which functions are enabled based on your account's role.
+                </div>
+
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+
+    <script>
+        $(document).ready(() => {
+            $('#navbar').load('inc/navbar.html');
+            $('#footer').load('inc/footer.html');
+        });
+    </script>
+</body>
+
+</html>

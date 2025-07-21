@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./style.css" />
+    <title>Software Information - HK.Huang Sales Management Software Guide</title>
+
+    <style>
+        /* Custom CSS for the guide page */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 960px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-body h2,
+        .card-body h3 {
+            color: #0056b3;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .card-body ul {
+            margin-bottom: 15px;
+        }
+
+        .card-body ul li {
+            margin-bottom: 8px;
+        }
+
+        .card-body strong {
+            color: #343a40;
+        }
+
+        .img-fluid {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .alert-info {
+            background-color: #e0f2f7;
+            border-color: #bee5eb;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .alert-warning {
+            background-color: #fff3cd;
+            border-color: #ffeeba;
+            color: #664d03;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .alert-danger {
+            background-color: #f8d7da;
+            border-color: #f5c2c7;
+            color: #842029;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .note {
+            font-style: italic;
+            color: #6c757d;
+            margin-top: 10px;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar"></div>
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <i class="bi bi-info-circle-fill me-2"></i>Software Information User Guide
+            </div>
+            <div class="card-body">
+                <p class="card-text">This guide explains how to view the **Software Information** (About Box) in the HK.Huang Sales Management Software, which provides essential details about the application.</p>
+
+                <h2 class="mt-4"><i class="bi bi-layout-text-sidebar-reverse me-2"></i>Overview of the Software Information Screen</h2>
+                <p>The Software Information screen (typically labeled "About Box" or similar in Windows applications) displays key details about the HK.Huang Sales Management Software itself, such as its version, copyright, and the company that developed it.</p>
+                <img src="images/softwareinfor.png" class="img-fluid mx-auto d-block" alt="Screenshot of the Software Information screen" />
+                <p class="note text-center">Image: The Software Information dialog box.</p>
+
+                <h3 class="mt-4"><i class="bi bi-box-arrow-in-right me-2"></i>Accessing Software Information</h3>
+                <p>To access the Software Information screen:</p>
+                <ul>
+                    <li>Typically, this screen can be found by navigating to the <strong class="text-primary">Help</strong> menu (or a similar menu like "File" or "About") in the main application window and selecting an option such as <strong class="text-primary">About HK.Huang Sales Management Software</strong> or <strong class="text-primary">Software Information</strong>.</li>
+                </ul>
+
+                <h3 class="mt-4"><i class="bi bi-journal-text me-2"></i>Understanding the Information Displayed</h3>
+                <p>Once opened, the Software Information screen presents the following details, retrieved directly from the application's properties (<span class="highlight">Assembly Attributes</span>):</p>
+                <ul>
+                    <li><strong>Software Name (Title):</strong> The main title of the software, often displayed at the top of the window (e.g., "Software HK.Huang Sales Management").</li>
+                    <li><strong>Product Name:</strong> The specific product name (e.g., "HK.Huang Sales Management Software").</li>
+                    <li><strong>Version:</strong> The current version number of the software (e.g., "Version 1.0.0.0"). This indicates the specific release of the application you are using.</li>
+                    <li><strong>Copyright:</strong> Copyright information, typically including the copyright symbol, year, and owner (e.g., "© 2024 HK.Huang").</li>
+                    <li><strong>Company Name:</strong> The name of the company or developer responsible for the software (e.g., "HK.Huang").</li>
+                    <li><strong>Description:</strong> A brief description of the software's purpose or features.</li>
+                </ul>
+                <div class="alert alert-info" role="alert">
+                    <i class="bi bi-info-circle me-2"></i> <strong>Note:</strong> This information is static and embedded within the application itself, providing quick access to essential details for support or reference.
+                </div>
+
+                <h3 class="mt-4"><i class="bi bi-x-circle-fill me-2"></i>Closing the Software Information Screen</h3>
+                <ul>
+                    <li>To close the Software Information screen, simply click the <strong class="text-primary">OK</strong> button.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('#navbar').load('inc/navbar.html');
+            $('#footer').load('inc/footer.html');
+        });
+    </script>
+</body>
+
+</html>
