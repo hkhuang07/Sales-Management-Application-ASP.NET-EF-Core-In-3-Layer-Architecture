@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8X7jdp/egMc=",
+  "dgSpecHash": "79yO88Ekx2Y=",
   "success": true,
-  "projectFilePath": "D:\\Study\\Information_Manager_System_Programming\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\ElectronicsStore.DataAccess\\ElectronicsStore.DataAccess.csproj",
+  "projectFilePath": "D:\\Study\\Programming_For_Information_Manager_System\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\ElectronicsStore.DataAccess\\ElectronicsStore.DataAccess.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

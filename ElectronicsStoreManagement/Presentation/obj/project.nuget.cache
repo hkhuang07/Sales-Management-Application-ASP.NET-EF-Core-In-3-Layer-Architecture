@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DXRTdXo+Ghs=",
+  "dgSpecHash": "4Yv/0VRKUNg=",
   "success": true,
-  "projectFilePath": "D:\\Study\\Information_Manager_System_Programming\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\Presentation\\ElectronicsStore.Presentation.csproj",
+  "projectFilePath": "D:\\Study\\Programming_For_Information_Manager_System\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\Presentation\\ElectronicsStore.Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\14.0.0\\automapper.14.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
@@ -109,9 +109,9 @@
       "code": "NU1603",
       "level": "Warning",
       "message": "Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms 150.1358.0 depends on Microsoft.SqlServer.Types (>= 14.0.0) but Microsoft.SqlServer.Types 14.0.0 was not found. Microsoft.SqlServer.Types 14.0.314.76 was resolved instead.",
-      "projectPath": "D:\\Study\\Information_Manager_System_Programming\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\Presentation\\ElectronicsStore.Presentation.csproj",
+      "projectPath": "D:\\Study\\Programming_For_Information_Manager_System\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\Presentation\\ElectronicsStore.Presentation.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Study\\Information_Manager_System_Programming\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\Presentation\\ElectronicsStore.Presentation.csproj",
+      "filePath": "D:\\Study\\Programming_For_Information_Manager_System\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\Presentation\\ElectronicsStore.Presentation.csproj",
       "libraryId": "Microsoft.SqlServer.Types",
       "targetGraphs": [
         "net8.0-windows7.0"
@@ -121,9 +121,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms 150.1358.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "D:\\Study\\Information_Manager_System_Programming\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\Presentation\\ElectronicsStore.Presentation.csproj",
+      "projectPath": "D:\\Study\\Programming_For_Information_Manager_System\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\Presentation\\ElectronicsStore.Presentation.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Study\\Information_Manager_System_Programming\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\Presentation\\ElectronicsStore.Presentation.csproj",
+      "filePath": "D:\\Study\\Programming_For_Information_Manager_System\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\Presentation\\ElectronicsStore.Presentation.csproj",
       "libraryId": "Corrected.Microsoft.ReportingServices.ReportViewerControl.Winforms",
       "targetGraphs": [
         "net8.0-windows7.0"
@@ -133,9 +133,9 @@
       "code": "NU1701",
       "level": "Warning",
       "message": "Package 'Microsoft.SqlServer.Types 14.0.314.76' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
-      "projectPath": "D:\\Study\\Information_Manager_System_Programming\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\Presentation\\ElectronicsStore.Presentation.csproj",
+      "projectPath": "D:\\Study\\Programming_For_Information_Manager_System\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\Presentation\\ElectronicsStore.Presentation.csproj",
       "warningLevel": 1,
-      "filePath": "D:\\Study\\Information_Manager_System_Programming\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\Presentation\\ElectronicsStore.Presentation.csproj",
+      "filePath": "D:\\Study\\Programming_For_Information_Manager_System\\Project\\Electronics Store Management Project\\ElectronicsStoreManagement\\Presentation\\ElectronicsStore.Presentation.csproj",
       "libraryId": "Microsoft.SqlServer.Types",
       "targetGraphs": [
         "net8.0-windows7.0"
