@@ -1,5 +1,5 @@
 # Sales Management System Software - ASP.NET (Entity Framework Core) in 3-Layer Architecture
-
+---
 ## 🎯 Project Overview: Revolutionizing Electronic Store Management
 
 In an era defined by rapid technological advancements, manual store management practices often lead to inefficiencies, data discrepancies, and lost opportunities. This project directly addresses these challenges by delivering an innovative **Electronic Store Management Software**. Our solution is designed to automate and optimize every facet of retail operations, particularly for businesses dealing with electronic goods like smartphones, laptops, and various components.
@@ -7,9 +7,8 @@ In an era defined by rapid technological advancements, manual store management p
 The core motivation behind this software is to empower store owners and employees with an intuitive, robust, and high-performance management application built on **Windows Forms**. By leveraging cutting-edge **.NET 8.0 technologies** and a meticulously designed **3-Layer Architecture** powered by **Entity Framework Core 8**, we provide essential functionalities that enable swift, accurate task execution, thereby dramatically boosting overall business efficiency and strategic decision-making. This project is engineered for today's needs and future scalability, ready to seamlessly transition to a sophisticated Client-Server model.
 
 Explore the application's vibrant interface and powerful functionalities through these visual demonstrations:
-
+---
 * **Video Demonstration: Comprehensive Application Walkthrough**
-Explore the application's interface and functionalities through these visual demonstrations:
 ![Sales Flow Demo](demo/video/sales.gif)
 
 ### Authentication
@@ -64,6 +63,7 @@ Access software information and help resources.
 ![Help Center](demo/video/helpcenter.gif)
 ![Software Information](demo/video/softwareinfor.gif)
 
+---
 ## ✨ Key Features
 
 Our Electronic Store Management Software offers a rich set of features designed to streamline daily operations:
@@ -77,6 +77,7 @@ Our Electronic Store Management Software offers a rich set of features designed 
 * **Reporting & Statistics** 📊: Generate comprehensive sales and product reports, with print capabilities via ReportViewer. [cite: 1228, 1239]
 * **SQL Server Data Storage** 💾: All data is securely stored and processed using Microsoft SQL Server, ensuring data integrity and security. [cite: 1229]
 * **3-Layer Architecture** 🏛️: The software is built upon a robust three-layer architecture (Presentation, Business Logic, and Data Access Layers) with Data Transfer Objects (DTO) for efficient data flow. [cite: 1230, 1300, 1301, 1302, 1303, 1304, 1305, 1306, 1307, 1308, 1309]
+---
 
 ## 🛠️ Technical Stack & Architecture: Powering Robust and Scalable Solutions
 
@@ -147,62 +148,125 @@ Explore key facets of the Electronic Store Management Software through these ill
 ### Authentication
 
 Secure login and password management for users.
-![Login Interface](demo/login.png)
-![Change Password](demo/changepass.png)
+<p align="center">
+  <h3>Authentication </h3>
+  <img src="demo/login.png">
+  <br>
+   <img src="demo/changepass.png">
+  <em>Secure login and changepassword </em>
+</p>
 
 ### Order Processing
 
 Handle customer orders and view details seamlessly.
-![Orders Interface](demo/orders.png)
-![Order Details Interface](demo/orderdetails.png)
-![Print Order](demo/printorder.png)
+<p align="center">
+  <h3>Order Processing </h3>
+  <img src="demo/orders.png">
+  <br>
+   <img src="demo/orderdetails.png">
+   <br>
+   <img src="demo/printorder.png">
+  <em>Order processing threads </em>
+</p>
+
 
 ### Data Management
 
 Manage your products, categories, and manufacturers efficiently.
 
 **Products**
-![Products Interface](demo/products.png)
+<p align="center">
+  <h3>Products Interface </h3>
+   <img src="demo/products.png">
+   <br>
+  <em>Product managerment</em>
+</p>
 
 **Categories**
-![Categories Interface](demo/categories.png)
-
+<p align="center">
+  <h3>Categories Interface </h3>
+   <img src="demo/categories.png">
+   <br>
+  <em>Categories managerment</em>
+</p>
 **Manufacturers**
-![Manufacturers Interface](demo/manufacturers.png)
-
+<p align="center">
+  <h3>Manufacturers Interface </h3>
+   <img src="demo/manufacturers.png">
+   <br>
+  <em>Manufacturers managerment</em>
+</p>
 ### User Management
 
 Manage your employees and customer database.
 
 **Employees**
-![Employees Interface](demo/employees.png)
-
+<p align="center">
+  <h3>Employees Interface </h3>
+   <img src="demo/employees.png">
+   <br>
+  <em>Employees managerment</em>
+</p>
 **Customers**
-![Customers Interface](demo/customers.png)
+<p align="center">
+  <h3>Customers Interface </h3>
+   <img src="demo/customers.png">
+   <br>
+  <em>Customers managerment</em>
+</p>
 
 ### Reporting & Statistics
 
 Gain insights with detailed product and revenue statistics.
 
 **Product Statistics**
-![Product Statistics Interface](demo/productstatistics.png)
-
+<p align="center">
+  <h3>Product Statistics Interface </h3>
+   <img src="demo/productstatistics.png">
+   <br>
+  <em>Product Statistics managerment</em>
+</p>
 **Revenue Statistics**
-![Revenue Statistics Interface](demo/revenuestatistics.png)
-
+<p align="center">
+  <h3>Revenue Statistics Interface </h3>
+   <img src="demo/revenuestatistics.png">
+   <br>
+  <em>Revenue Statistics managerment</em>
+</p>
 ### Help & About
 
 Access software information and help resources.
-![Help Window](demo/help.PNG)
-![Splash Screen](demo/flash.png)
-![Software Info Window](demo/softwareinfor.png)
+<p align="center">
+  <h3>Help Interface </h3>
+   <img src="demo/help.PNG">
+   <br>
+  <em>Help Center Website</em>
+</p>
+<p align="center">
+  <h3>Splash Screen </h3>
+   <img src="demo/flash.png">
+   <br>
+  <em>Flash Screen When Start App</em>
+</p>
+<p align="center">
+  <h3>Software Info Window</h3>
+   <img src="demo/softwareinfor.png">
+   <br>
+  <em>About Software </em>
+</p>
 
 ### Sales
 
 Streamlined sales operations.
-![Sales Process Screenshot](demo/Sale.png)
-![Sales Process Screenshot 2](demo/Sale01.png)
-![Confirm Order](demo/confirm.png)
+<p align="center">
+  <h3>Sales Processing </h3>
+  <img src="demo/Sale.png">
+  <br>
+   <img src="demo/Sale01.png">
+   <br>
+   <img src="demo/confirm.png">
+  <em>Sales processing threads </em>
+</p>
 
 ### Main Interface
 
