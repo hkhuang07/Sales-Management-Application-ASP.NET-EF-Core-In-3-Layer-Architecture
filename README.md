@@ -6,63 +6,107 @@ In an era defined by rapid technological advancements, manual store management p
 
 The core motivation behind this software is to empower store owners and employees with an intuitive, robust, and high-performance management application built on **Windows Forms**. By leveraging cutting-edge **.NET 8.0 technologies** and a meticulously designed **3-Layer Architecture** powered by **Entity Framework Core 8**, we provide essential functionalities that enable swift, accurate task execution, thereby dramatically boosting overall business efficiency and strategic decision-making. This project is engineered for today's needs and future scalability, ready to seamlessly transition to a sophisticated Client-Server model.
 
-Explore the application's vibrant interface and powerful functionalities through these visual demonstrations:
+## 🎥 Application Demonstrations: See It In Action!
+
+Dive into the dynamic functionalities of the Electronic Store Management Software through these captivating GIF demonstrations. Witness the intuitive design and powerful features that streamline operations and enhance user experience.
+
 ---
-* **Video Demonstration: Comprehensive Application Walkthrough**
-![Sales Flow Demo](demo/video/sales.gif)
 
-### Authentication
+### Comprehensive Sales Workflow
+<p align="center">
+  <h3>End-to-End Sales Process</h3>
+  <img src="demo/video/sales.gif" alt="Sales Flow Demonstration">
+  <p><em>Experience the entire sales journey from product selection, quantity adjustment, applying discounts, to finalizing the transaction. This GIF highlights the seamless flow designed for quick and efficient customer service.</em></p>
+</p>
 
-Secure login and password management for users.
+### Secure Authentication System
+<p align="center">
+  <h3>User Login and Account Security</h3>
+  <img src="demo/video/login.gif" alt="Login Screen Demo">
+  <p><em>Observe the robust login process, demonstrating how users securely access the application. This includes input validation and a clear, user-friendly interface for authentication.</em></p>
+</p>
 
-![Login Screen](demo/video/login.gif)
+### Efficient Order Processing
+<p align="center">
+  <h3>Order Creation and Detail Management</h3>
+  <img src="demo/video/order-orderdetails.gif" alt="Order and Order Details Flow Demo">
+  <p><em>Watch how new orders are effortlessly created, updated, and managed. This demonstration provides a comprehensive view of adding items, specifying quantities, and delving into detailed order specifics, ensuring precision in every transaction.</em></p>
+</p>
 
-### Order Processing
+### Intuitive Data Management
+Streamline the management of your core business data with these powerful modules.
 
-Handle customer orders and view details seamlessly.
+#### Products Management
+<p align="center">
+  <h3>Comprehensive Product Control</h3>
+  <img src="demo/video/products.gif" alt="Products Management Demo">
+  <p><em>See how easily new products can be added, existing ones updated, and inventory details managed. This GIF showcases the full lifecycle of product data within the system.</em></p>
+</p>
 
-![Order and Order Details Flow](demo/video/order-orderdetails.gif)
+#### Categories Management
+<p align="center">
+  <h3>Organizing Product Categories</h3>
+  <img src="demo/video/categories.gif" alt="Categories Management Demo">
+  <p><em>Demonstrates the simplicity of defining and organizing product categories, essential for clear inventory segmentation and enhanced navigability.</em></p>
+</p>
 
-### Data Management
+#### Manufacturers Management
+<p align="center">
+  <h3>Streamlined Manufacturer Data</h3>
+  <img src="demo/video/manufacturer.gif" alt="Manufacturers Management Demo">
+  <p><em>Witness the efficient process of adding, editing, and maintaining crucial information about product manufacturers, ensuring accurate sourcing data.</em></p>
+</p>
 
-Manage your products, categories, and manufacturers efficiently.
+### Dynamic User Management
+Tools for comprehensive control over employee and customer databases.
 
-**Products**
-![Products Management](demo/video/products.gif)
+#### Employees Management
+<p align="center">
+  <h3>Administering Employee Records</h3>
+  <img src="demo/video/employees.gif" alt="Employees Management Demo">
+  <p><em>Explore the module dedicated to managing employee profiles, roles, and access permissions, ensuring secure and organized staff information.</em></p>
+</p>
 
-**Categories**
-![Categories Management](demo/video/categories.gif)
+#### Customers Management
+<p align="center">
+  <h3>Managing Your Customer Database</h3>
+  <img src="demo/video/customer.gif" alt="Customers Management Demo">
+  <p><em>See how the system facilitates the seamless management of customer profiles, contact details, and purchase history, enhancing customer relationship management.</em></p>
+</p>
 
-**Manufacturers**
-![Manufacturers Management](demo/video/manufacturer.gif)
+### Insightful Reporting & Statistics
+Generate vital reports and gain actionable insights into business performance.
 
-### User Management
+#### Product Statistics
+<p align="center">
+  <h3>Analyzing Product Performance</h3>
+  <img src="demo/video/productstatistic.gif" alt="Product Statistics Report Demo">
+  <p><em>Dive into the product statistics dashboard, revealing key metrics like best-selling items, inventory levels, and sales trends to inform strategic decisions.</em></p>
+</p>
 
-Manage your employees and customer database.
+#### Revenue Statistics
+<p align="center">
+  <h3>Tracking Financial Performance</h3>
+  <img src="demo/video/revenuestatistic.gif" alt="Revenue Statistics Report Demo">
+  <p><em>Observe how the system visualizes revenue data, providing clear insights into sales figures, profit margins, and financial trends over time.</em></p>
+</p>
 
-**Employees**
-![Employees Management](demo/video/employees.gif)
+### Accessible Help & Information
+Quick access to support resources and software details.
 
-**Customers**
-![Customers Management](demo/video/customer.gif)
+#### Help Center
+<p align="center">
+  <h3>Integrated Help Documentation</h3>
+  <img src="demo/video/helpcenter.gif" alt="Help Center Demo">
+  <p><em>A quick peek into the integrated help center, demonstrating how users can easily find information and support directly within the application.</em></p>
+</p>
 
-### Reporting & Statistics
-
-Gain insights with detailed product and revenue statistics.
-
-**Product Statistics**
-![Product Statistics Report](demo/video/productstatistic.gif)
-
-**Revenue Statistics**
-![Revenue Statistics Report](demo/video/revenuestatistic.gif)
-
-### Help & About
-
-Access software information and help resources.
-
-![Help Center](demo/video/helpcenter.gif)
-![Software Information](demo/video/softwareinfor.gif)
-
+#### Software Information
+<p align="center">
+  <h3>About the Application</h3>
+  <img src="demo/video/softwareinfor.gif" alt="Software Information Demo">
+  <p><em>Provides a brief overview of the application's version, build information, and developer credits, ensuring transparency and quick reference.</em></p>
+</p>
 ---
 ## ✨ Key Features
 
