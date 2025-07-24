@@ -145,134 +145,143 @@ The meticulous design of our 3-Layer Architecture, especially with the disciplin
 
 Explore key facets of the Electronic Store Management Software through these illustrative screenshots, providing a concrete view of its intuitive design and robust functionalities.
 
-### Authentication
+### Authentication & Access Control
 
-Secure login and password management for users.
+Secure user login and comprehensive password management features.
 <p align="center">
-  <h3>Authentication </h3>
-  <img src="demo/login.png">
+  <h3>Secure Login Interface</h3>
+  <img src="demo/login.png" alt="Login Screen">
   <br>
-   <img src="demo/changepass.png">
-  <em>Secure login and changepassword </em>
+  <h3>Password Change Interface</h3>
+  <img src="demo/changepass.png" alt="Change Password Screen">
+  <em>Seamless and secure login with robust password management capabilities.</em>
 </p>
 
-### Order Processing
+### Order Processing & Management
 
-Handle customer orders and view details seamlessly.
+Efficiently handle customer orders and view detailed transaction information.
 <p align="center">
-  <h3>Order Processing </h3>
-  <img src="demo/orders.png">
+  <h3>Orders Overview</h3>
+  <img src="demo/orders.png" alt="Orders List Screen">
   <br>
-   <img src="demo/orderdetails.png">
-   <br>
-   <img src="demo/printorder.png">
-  <em>Order processing threads </em>
+  <h3>Order Details View</h3>
+  <img src="demo/orderdetails.png" alt="Order Details Screen">
+  <br>
+  <h3>Print Order Preview</h3>
+  <img src="demo/printorder.png" alt="Print Order Screen">
+  <em>Streamlined workflows for processing, viewing, and printing customer orders.</em>
 </p>
 
+### Master Data Management
 
-### Data Management
+Comprehensive tools to efficiently manage products, categories, and manufacturers.
 
-Manage your products, categories, and manufacturers efficiently.
-
-**Products**
+#### Products
 <p align="center">
-  <h3>Products Interface </h3>
-   <img src="demo/products.png">
-   <br>
-  <em>Product managerment</em>
+  <h3>Products Management Interface</h3>
+  <img src="demo/products.png" alt="Products Management Screen">
+  <em>Effortlessly manage product inventory, details, and attributes.</em>
 </p>
 
-**Categories**
+#### Categories
 <p align="center">
-  <h3>Categories Interface </h3>
-   <img src="demo/categories.png">
-   <br>
-  <em>Categories managerment</em>
+  <h3>Categories Management Interface</h3>
+  <img src="demo/categories.png" alt="Categories Management Screen">
+  <em>Organize products logically with intuitive category management.</em>
 </p>
-**Manufacturers**
-<p align="center">
-  <h3>Manufacturers Interface </h3>
-   <img src="demo/manufacturers.png">
-   <br>
-  <em>Manufacturers managerment</em>
-</p>
-### User Management
 
-Manage your employees and customer database.
-
-**Employees**
+#### Manufacturers
 <p align="center">
-  <h3>Employees Interface </h3>
-   <img src="demo/employees.png">
-   <br>
-  <em>Employees managerment</em>
+  <h3>Manufacturers Management Interface</h3>
+  <img src="demo/manufacturers.png" alt="Manufacturers Management Screen">
+  <em>Maintain and update information for all product manufacturers.</em>
 </p>
-**Customers**
+
+### User & Employee Management
+
+Robust modules for managing both internal employees and customer databases.
+
+#### Employees
 <p align="center">
-  <h3>Customers Interface </h3>
-   <img src="demo/customers.png">
-   <br>
-  <em>Customers managerment</em>
+  <h3>Employees Management Interface</h3>
+  <img src="demo/employees.png" alt="Employees Management Screen">
+  <em>Administer employee records, roles, and access permissions.</em>
+</p>
+
+#### Customers
+<p align="center">
+  <h3>Customers Management Interface</h3>
+  <img src="demo/customers.png" alt="Customers Management Screen">
+  <em>Manage your customer database with ease, from contact details to purchase history.</em>
 </p>
 
 ### Reporting & Statistics
 
-Gain insights with detailed product and revenue statistics.
+Gain actionable insights with detailed product and revenue statistics.
 
-**Product Statistics**
+#### Product Statistics
 <p align="center">
-  <h3>Product Statistics Interface </h3>
-   <img src="demo/productstatistics.png">
-   <br>
-  <em>Product Statistics managerment</em>
-</p>
-**Revenue Statistics**
-<p align="center">
-  <h3>Revenue Statistics Interface </h3>
-   <img src="demo/revenuestatistics.png">
-   <br>
-  <em>Revenue Statistics managerment</em>
-</p>
-### Help & About
-
-Access software information and help resources.
-<p align="center">
-  <h3>Help Interface </h3>
-   <img src="demo/help.PNG">
-   <br>
-  <em>Help Center Website</em>
-</p>
-<p align="center">
-  <h3>Splash Screen </h3>
-   <img src="demo/flash.png">
-   <br>
-  <em>Flash Screen When Start App</em>
-</p>
-<p align="center">
-  <h3>Software Info Window</h3>
-   <img src="demo/softwareinfor.png">
-   <br>
-  <em>About Software </em>
+  <h3>Product Statistics Dashboard</h3>
+  <img src="demo/productstatistics.png" alt="Product Statistics Screen">
+  <em>Analyze product performance, sales trends, and inventory levels.</em>
 </p>
 
-### Sales
-
-Streamlined sales operations.
+#### Revenue Statistics
 <p align="center">
-  <h3>Sales Processing </h3>
-  <img src="demo/Sale.png">
+  <h3>Revenue Statistics Dashboard</h3>
+  <img src="demo/revenuestatistics.png" alt="Revenue Statistics Screen">
+  <em>Track financial performance with comprehensive revenue reports and visualizations.</em>
+</p>
+
+### Help & About Resources
+
+Access essential software information and comprehensive help documentation.
+
+#### Help Center
+<p align="center">
+  <h3>Integrated Help Center Website</h3>
+  <img src="demo/help.PNG" alt="Help Center Website Screenshot">
+  <em>Quick access to a comprehensive help guide for navigating the application.</em>
+</p>
+
+#### Application Splash Screen
+<p align="center">
+  <h3>Application Splash Screen</h3>
+  <img src="demo/flash.png" alt="Splash Screen">
+  <em>The initial screen displayed upon application startup, providing a smooth user experience.</em>
+</p>
+
+#### Software Information
+<p align="center">
+  <h3>Software Information Window</h3>
+  <img src="demo/softwareinfor.png" alt="About Software Window">
+  <em>View detailed information about the software version, licensing, and credits.</em>
+</p>
+
+### Sales Operations
+
+Streamlined and efficient processes for managing sales transactions.
+<p align="center">
+  <h3>Sales Processing Interface - Step 1</h3>
+  <img src="demo/Sale.png" alt="Sales Processing Screen 1">
   <br>
-   <img src="demo/Sale01.png">
-   <br>
-   <img src="demo/confirm.png">
-  <em>Sales processing threads </em>
+  <h3>Sales Processing Interface - Step 2</h3>
+  <img src="demo/Sale01.png" alt="Sales Processing Screen 2">
+  <br>
+  <h3>Sales Confirmation Dialog</h3>
+  <img src="demo/confirm.png" alt="Sales Confirmation Dialog">
+  <em>Intuitive multi-step sales processing, from item selection to final confirmation.</em>
 </p>
 
-### Main Interface
+### Main Application Interface
 
-The main application window provides intuitive navigation through various toolbars and panels.
+The central hub of the application, offering intuitive navigation and access to all modules.
+<p align="center">
+  <h3>Main Window Overview</h3>
+  <img src="demo/main.png" alt="Main Application Window">
+  <em>The primary interface, providing easy access to all features through a well-organized toolbar and panels.</em>
+</p>
 
-![Main Window](demo/main.png)
 ## ⚙️ Setup and Deployment
 Follow these steps to clone and run the project locally.
 
