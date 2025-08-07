@@ -88,7 +88,11 @@
             btnMinus.BackColor = Color.DodgerBlue;
             btnMinus.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMinus.ForeColor = Color.AliceBlue;
+<<<<<<< HEAD
             btnMinus.Location = new Point(106, 49);
+=======
+            btnMinus.Location = new Point(152, 3);
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             btnMinus.Name = "btnMinus";
             btnMinus.Size = new Size(40, 40);
             btnMinus.TabIndex = 12;
@@ -132,7 +136,11 @@
             Controls.Add(lblProductName);
             Controls.Add(picImage);
             Name = "ProductCard";
+<<<<<<< HEAD
             Size = new Size(150, 220);
+=======
+            Size = new Size(200, 220);
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             Load += ProductCard_Load;
             ((System.ComponentModel.ISupportInitialize)picImage).EndInit();
             ResumeLayout(false);

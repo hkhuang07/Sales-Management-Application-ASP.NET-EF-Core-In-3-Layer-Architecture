@@ -22,7 +22,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ElectronicsStore.Presentation
+<<<<<<< HEAD
 build_property.ProjectDir = D:\Study\Programming_Information_Manager_System\Project\ElectronicsStore ManagementProject\ElectronicsStoreManagement\Presentation\
+=======
+build_property.ProjectDir = D:\Study\Programming_For_Information_Manager_System\Project\Electronics Store Management Project\ElectronicsStoreManagement\Presentation\
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

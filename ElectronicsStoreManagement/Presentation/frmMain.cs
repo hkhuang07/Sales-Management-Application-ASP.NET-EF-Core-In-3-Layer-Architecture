@@ -371,7 +371,10 @@ namespace ElectronicsStore.Presentation
 
         public void NotLoggedIn()
         {
+<<<<<<< HEAD
             
+=======
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             // Sáng đăng nhập
             mnuLogIn.Enabled = true;
            
@@ -396,7 +399,11 @@ namespace ElectronicsStore.Presentation
             tabChangepass.Enabled = false;
             tabRestore.Enabled = false;
             tabBackup.Enabled = false;
+<<<<<<< HEAD
             TabOrder.Enabled = false;
+=======
+            tabSale.Enabled = false;
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             tabManagement.Enabled = false;
             tabReportStatistics.Enabled = false;
             tabCategories.Enabled = false;
@@ -413,8 +420,13 @@ namespace ElectronicsStore.Presentation
             btnChangePass.Enabled = false;
             btnRestore.Enabled = false;
             btnBackup.Enabled = false;
+<<<<<<< HEAD
             tabSale.Enabled = false;
             btnSale.Enabled = false;
+=======
+            btnSale.Enabled = false;
+            btnSales.Enabled = false;
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             btnCategories.Enabled = false;
             btnManufacturers.Enabled = false;
             btnProducts.Enabled = false;
@@ -424,7 +436,11 @@ namespace ElectronicsStore.Presentation
             btnOrders.Enabled = false;
             btnProductStatistics.Enabled = false;
             btnRevenueStatistics.Enabled = false;
+<<<<<<< HEAD
             sale?.Dispose();
+=======
+
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             // Hiển thị thông tin trên thanh trạng thái
             lblStatus.Text = "Not Logged In.";
         }
@@ -453,7 +469,11 @@ namespace ElectronicsStore.Presentation
             tabChangepass.Enabled = true;
             tabRestore.Enabled = true;
             tabBackup.Enabled = true;
+<<<<<<< HEAD
             TabOrder.Enabled = true;
+=======
+            tabSale.Enabled = true;
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             tabManagement.Enabled = true;
             tabReportStatistics.Enabled = true;
             tabCategories.Enabled = true;
@@ -470,8 +490,13 @@ namespace ElectronicsStore.Presentation
             btnChangePass.Enabled = true;
             btnRestore.Enabled = true;
             btnBackup.Enabled = true;
+<<<<<<< HEAD
             tabSale.Enabled = true;
             btnSale.Enabled = true;
+=======
+            btnSale.Enabled = true;
+            btnSales.Enabled = true;
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             btnCategories.Enabled = true;
             btnManufacturers.Enabled = true;
             btnProducts.Enabled = true;
@@ -505,7 +530,11 @@ namespace ElectronicsStore.Presentation
             tabChangepass.Enabled = true;
             tabRestore.Enabled = true;   
             tabBackup.Enabled = true;
+<<<<<<< HEAD
             TabOrder.Enabled = true;
+=======
+            tabSale.Enabled = true;
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             tabManagement.Enabled = true;
             tabCategories.Enabled = false; // Nhân viên không có quyền truy cập vào danh sách danh mục
             tabManufacturer.Enabled = false; // Nhân viên không có quyền truy cập vào danh sách nhà sản xuất
@@ -521,8 +550,13 @@ namespace ElectronicsStore.Presentation
             btnChangePass.Enabled = true;
             btnRestore.Enabled = true;
             btnBackup.Enabled = true;
+<<<<<<< HEAD
             tabSale.Enabled = true;
             btnSale.Enabled = true;
+=======
+            btnSale.Enabled = true;
+            btnSales.Enabled = true;
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             btnCategories.Enabled = false; // Nhân viên không có quyền truy cập vào danh sách danh mục
             btnManufacturers.Enabled = false; // Nhân viên không có quyền truy cập vào danh sách nhà sản xuất
             btnProducts.Enabled = true;

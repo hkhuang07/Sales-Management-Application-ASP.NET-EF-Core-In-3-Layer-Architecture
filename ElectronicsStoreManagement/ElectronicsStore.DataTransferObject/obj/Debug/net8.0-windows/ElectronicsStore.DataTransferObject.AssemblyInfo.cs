@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElectronicsStore.DataTransferObject")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a9f37eb26ce99089f675b5679f95515c9e11279")]
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
 [assembly: System.Reflection.AssemblyProductAttribute("ElectronicsStore.DataTransferObject")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElectronicsStore.DataTransferObject")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

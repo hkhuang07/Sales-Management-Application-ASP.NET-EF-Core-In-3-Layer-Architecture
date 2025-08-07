@@ -16,7 +16,10 @@ using ElectronicsStore.DataAccess;
 
 namespace ElectronicsStore.Presentation
 {
+<<<<<<< HEAD
     //orders
+=======
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
     public partial class frmOrders : Form
     {
         private readonly OrderService _orderService;

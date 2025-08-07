@@ -16,7 +16,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright ©2025 by Huynh Quoc Huy")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute(@"Sales Management Software is a comprehensive system designed to help businesses efficiently manage their sales operations. It allows users to handle product inventory, customer information, orders, invoices, and stock levels in a centralized platform. The software streamlines the sales process from order creation to payment, reduces manual tasks, and minimizes errors. With features like real-time data tracking, reporting tools, and user-friendly interfaces, it empowers business owners to monitor performance, make informed decisions, and improve overall productivity. Ideal for retail stores, wholesalers, and service providers, this solution enhances both customer satisfaction and operational efficiency.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8853a9cae251c21df23bedeaeb51de69e0904ff5")]
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
 [assembly: System.Reflection.AssemblyProductAttribute("HK.Huang Sales Management")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElectronicsStore.Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

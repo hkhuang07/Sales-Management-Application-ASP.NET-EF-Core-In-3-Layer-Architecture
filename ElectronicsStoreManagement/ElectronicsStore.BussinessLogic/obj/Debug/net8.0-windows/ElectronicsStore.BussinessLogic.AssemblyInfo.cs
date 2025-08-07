@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElectronicsStore.BussinessLogic")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8853a9cae251c21df23bedeaeb51de69e0904ff5")]
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
 [assembly: System.Reflection.AssemblyProductAttribute("ElectronicsStore.BussinessLogic")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElectronicsStore.BussinessLogic")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

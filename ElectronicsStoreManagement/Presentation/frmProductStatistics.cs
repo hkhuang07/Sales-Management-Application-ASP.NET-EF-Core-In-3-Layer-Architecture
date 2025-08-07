@@ -18,7 +18,10 @@ using Microsoft.Reporting.WinForms;
 
 namespace ElectronicsStore.Presentation
 {
+<<<<<<< HEAD
     //productstatistics
+=======
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
     public partial class frmProductStatistics : Form
     {
         private readonly ProductService _productService;

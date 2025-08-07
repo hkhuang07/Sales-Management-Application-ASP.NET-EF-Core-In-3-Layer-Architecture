@@ -13,7 +13,10 @@ namespace ElectronicsStore.Presentation
 {
     public partial class frmLogin : Form
     {
+<<<<<<< HEAD
         //login.cs
+=======
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
         public frmLogin()
         {
             InitializeComponent();

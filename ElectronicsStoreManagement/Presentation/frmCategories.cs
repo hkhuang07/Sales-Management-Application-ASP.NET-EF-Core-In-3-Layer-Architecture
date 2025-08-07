@@ -16,7 +16,10 @@ using ElectronicsStore.DataTransferObject;
 
 namespace ElectronicsStore.Presentation
 {
+<<<<<<< HEAD
     //categories
+=======
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
     public partial class frmCategories : Form
     {
         private readonly CategoryService _service;

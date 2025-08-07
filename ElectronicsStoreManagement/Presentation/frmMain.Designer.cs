@@ -61,7 +61,11 @@
             helpProvider1 = new HelpProvider();
             Order = new TabPage();
             panel16 = new Panel();
+<<<<<<< HEAD
             tabSale = new Button();
+=======
+            btnSale = new Button();
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             pictureBox15 = new PictureBox();
             tabHelp = new TabPage();
             panel1 = new Panel();
@@ -115,7 +119,11 @@
             panel3 = new Panel();
             tabLogin = new Button();
             pictureBox3 = new PictureBox();
+<<<<<<< HEAD
             TabOrder = new TabControl();
+=======
+            tabSale = new TabControl();
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             label1 = new Label();
             label8 = new Label();
             btnLogin = new Button();
@@ -139,7 +147,11 @@
             btnManufacturers = new Button();
             btnCategories = new Button();
             label18 = new Label();
+<<<<<<< HEAD
             btnSale = new Button();
+=======
+            btnSales = new Button();
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             label2 = new Label();
             statusStrip1.SuspendLayout();
             menuStrip1.SuspendLayout();
@@ -182,7 +194,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+<<<<<<< HEAD
             TabOrder.SuspendLayout();
+=======
+            tabSale.SuspendLayout();
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             panel7.SuspendLayout();
             SuspendLayout();
             // 
@@ -482,7 +498,11 @@
             // panel16
             // 
             panel16.BackColor = Color.RoyalBlue;
+<<<<<<< HEAD
             panel16.Controls.Add(tabSale);
+=======
+            panel16.Controls.Add(btnSale);
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             panel16.Controls.Add(pictureBox15);
             panel16.Dock = DockStyle.Left;
             panel16.Location = new Point(3, 3);
@@ -490,6 +510,7 @@
             panel16.Size = new Size(89, 98);
             panel16.TabIndex = 15;
             // 
+<<<<<<< HEAD
             // tabSale
             // 
             tabSale.BackColor = Color.RoyalBlue;
@@ -504,6 +525,22 @@
             tabSale.Text = "Sale";
             tabSale.UseVisualStyleBackColor = false;
             tabSale.Click += mnuSale_Click;
+=======
+            // btnSale
+            // 
+            btnSale.BackColor = Color.RoyalBlue;
+            btnSale.Dock = DockStyle.Fill;
+            btnSale.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSale.ForeColor = Color.AliceBlue;
+            btnSale.Location = new Point(0, 72);
+            btnSale.Margin = new Padding(1);
+            btnSale.Name = "btnSale";
+            btnSale.Size = new Size(89, 26);
+            btnSale.TabIndex = 2;
+            btnSale.Text = "Sale";
+            btnSale.UseVisualStyleBackColor = false;
+            btnSale.Click += mnuSale_Click;
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             // 
             // pictureBox15
             // 
@@ -1181,6 +1218,7 @@
             pictureBox3.TabIndex = 1;
             pictureBox3.TabStop = false;
             // 
+<<<<<<< HEAD
             // TabOrder
             // 
             TabOrder.Controls.Add(tabSystem);
@@ -1195,6 +1233,22 @@
             TabOrder.SelectedIndex = 0;
             TabOrder.Size = new Size(984, 134);
             TabOrder.TabIndex = 1;
+=======
+            // tabSale
+            // 
+            tabSale.Controls.Add(tabSystem);
+            tabSale.Controls.Add(Order);
+            tabSale.Controls.Add(tabManagement);
+            tabSale.Controls.Add(tabReportStatistics);
+            tabSale.Controls.Add(tabHelp);
+            tabSale.Dock = DockStyle.Top;
+            tabSale.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            tabSale.Location = new Point(0, 28);
+            tabSale.Name = "tabSale";
+            tabSale.SelectedIndex = 0;
+            tabSale.Size = new Size(984, 134);
+            tabSale.TabIndex = 1;
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             // 
             // label1
             // 
@@ -1326,7 +1380,11 @@
             panel7.Controls.Add(btnManufacturers);
             panel7.Controls.Add(btnCategories);
             panel7.Controls.Add(label18);
+<<<<<<< HEAD
             panel7.Controls.Add(btnSale);
+=======
+            panel7.Controls.Add(btnSales);
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             panel7.Controls.Add(label2);
             panel7.Controls.Add(btnRestore);
             panel7.Controls.Add(btnBackup);
@@ -1519,6 +1577,7 @@
             label18.TabIndex = 59;
             label18.Text = "Management";
             // 
+<<<<<<< HEAD
             // btnSale
             // 
             btnSale.BackColor = Color.RoyalBlue;
@@ -1532,6 +1591,21 @@
             btnSale.Text = "Sale";
             btnSale.UseVisualStyleBackColor = false;
             btnSale.ClientSizeChanged += mnuSale_Click;
+=======
+            // btnSales
+            // 
+            btnSales.BackColor = Color.RoyalBlue;
+            btnSales.Dock = DockStyle.Top;
+            btnSales.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            btnSales.ForeColor = Color.AliceBlue;
+            btnSales.Location = new Point(0, 276);
+            btnSales.Name = "btnSales";
+            btnSales.Size = new Size(159, 39);
+            btnSales.TabIndex = 56;
+            btnSales.Text = "Sale";
+            btnSales.UseVisualStyleBackColor = false;
+            btnSales.ClientSizeChanged += mnuSale_Click;
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             // 
             // label2
             // 
@@ -1551,7 +1625,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(984, 561);
             Controls.Add(panel7);
+<<<<<<< HEAD
             Controls.Add(TabOrder);
+=======
+            Controls.Add(tabSale);
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             Controls.Add(statusStrip1);
             Controls.Add(menuStrip1);
             ForeColor = Color.MidnightBlue;
@@ -1607,7 +1685,11 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+<<<<<<< HEAD
             TabOrder.ResumeLayout(false);
+=======
+            tabSale.ResumeLayout(false);
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
             ResumeLayout(false);
@@ -1688,9 +1770,15 @@
         private Panel panel3;
         private Button tabLogin;
         private PictureBox pictureBox3;
+<<<<<<< HEAD
         private TabControl TabOrder;
         private Panel panel16;
         private Button tabSale;
+=======
+        private TabControl tabSale;
+        private Panel panel16;
+        private Button btnSale;
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
         private PictureBox pictureBox15;
         private ToolStripMenuItem mnuExit;
         private ToolStripMenuItem mnuData;
@@ -1717,7 +1805,11 @@
         private Button btnManufacturers;
         private Button btnCategories;
         private Label label18;
+<<<<<<< HEAD
         private Button btnSale;
+=======
+        private Button btnSales;
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
         private Label label2;
         private Panel panel18;
         private Button button4;

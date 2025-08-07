@@ -13,7 +13,10 @@ using BC = BCrypt.Net.BCrypt;
 
 namespace ElectronicsStore.Presentation
 {
+<<<<<<< HEAD
     //changepassword
+=======
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
     public partial class frmChangePass : Form
     {
         private readonly EmployeeService _employeeService;

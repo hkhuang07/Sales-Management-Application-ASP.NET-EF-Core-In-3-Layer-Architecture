@@ -18,13 +18,20 @@ using static ElectronicsStore.Presentation.Reports.ElectronicsStoreDataSet;
 
 namespace ElectronicsStore.Presentation
 {
+<<<<<<< HEAD
     //sale process
+=======
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
     public partial class frmSale : Form
     {
         private readonly ProductService _productService;
         private readonly OrderService _orderService;
         private readonly CustomerService _customerService;
+<<<<<<< HEAD
         private int currentOrderID = 0; 
+=======
+        private int currentOrderID = 0; // Giả sử là 0 khi chưa lưu xuống DB
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
         private List<OrderDetailsDTO> orderDetails = new List<OrderDetailsDTO>();
         string imagesFolder = Application.StartupPath.Replace("bin\\Debug\\net8.0-windows", "Images");
 

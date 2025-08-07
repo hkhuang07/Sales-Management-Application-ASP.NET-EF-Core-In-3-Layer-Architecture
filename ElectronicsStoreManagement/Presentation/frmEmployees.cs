@@ -14,7 +14,10 @@ using ElectronicsStore.DataTransferObject;
 
 namespace ElectronicsStore.Presentation
 {
+<<<<<<< HEAD
     //employees
+=======
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
     public partial class frmEmployees : Form
     {
         private readonly EmployeeService _service;

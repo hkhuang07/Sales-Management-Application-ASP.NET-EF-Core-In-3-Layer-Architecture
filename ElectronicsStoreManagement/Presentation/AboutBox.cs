@@ -12,7 +12,10 @@ namespace ElectronicsStore.Presentation
 {
     partial class AboutBox : Form
     {
+<<<<<<< HEAD
         //aboutbox.cs
+=======
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
         public AboutBox()
         {
             InitializeComponent();

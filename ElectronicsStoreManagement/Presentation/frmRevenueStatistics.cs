@@ -17,7 +17,10 @@ using static ElectronicsStore.Presentation.Reports.ElectronicsStoreDataSet;
 
 namespace ElectronicsStore.Presentation
 {
+<<<<<<< HEAD
     //revenuestatistics
+=======
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
     public partial class frmRevenueStatistics : Form
     {
         private readonly OrderService _orderService;

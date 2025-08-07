@@ -8,7 +8,11 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ElectronicsStore.DataTransferObject
+<<<<<<< HEAD
 build_property.ProjectDir = D:\Study\Programming_Information_Manager_System\Project\ElectronicsStore ManagementProject\ElectronicsStoreManagement\ElectronicsStore.DataTransferObject\
+=======
+build_property.ProjectDir = D:\Study\Information_Manager_System_Programming\Project\Electronics Store Management Project\ElectronicsStoreManagement\ElectronicsStore.DataTransferObject\
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTUseWindowsUIXamlProjections = false

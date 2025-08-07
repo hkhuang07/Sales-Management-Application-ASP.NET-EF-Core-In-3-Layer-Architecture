@@ -28,13 +28,21 @@ namespace ElectronicsStore.Presentation
 
         private void Flash_Load(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             timer.Interval = 300; // Mở form trong 3 giây
+=======
+            timer.Interval = 3000; // Mở form trong 3 giây
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             timer.Start();
         }
 
         private void timer_Tick(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             timer.Interval = 100; // Mở form trong 3 giây
+=======
+            timer.Interval = 3000; // Mở form trong 3 giây
+>>>>>>> 3065499e331bff93273813c88f9001fae0918d8c
             timer.Start();
 
             progressValue++;
