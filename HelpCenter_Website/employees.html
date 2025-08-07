@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+	<link rel="icon" href="favicon.ico">
+    <title>Employees - HK.Huang Sales Management Software Guide</title>
+
+    <style>
+        /* Custom CSS for the guide page (similar to previous guides) */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 960px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-body h2,
+        .card-body h3 {
+            color: #0056b3;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .card-body ul {
+            margin-bottom: 15px;
+        }
+
+        .card-body ul li {
+            margin-bottom: 8px;
+        }
+
+        .card-body strong {
+            color: #343a40;
+        }
+
+        .img-fluid {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .alert-info {
+            background-color: #e0f2f7;
+            border-color: #bee5eb;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .alert-warning {
+            background-color: #fff3cd;
+            border-color: #ffeeba;
+            color: #664d03;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .alert-danger {
+            background-color: #f8d7da;
+            border-color: #f5c2c7;
+            color: #842029;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .note {
+            font-style: italic;
+            color: #6c757d;
+            margin-top: 10px;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar"></div>
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <i class="bi bi-people-fill me-2"></i>Employee Management User Guide
+            </div>
+            <div class="card-body">
+                <p class="card-text">This guide provides instructions for managing employee information within the **HK.Huang Sales Management Software**. Effective employee management is crucial for operational efficiency and security.</p>
+
+                <h2 class="mt-4"><i class="bi bi-layout-text-sidebar-reverse me-2"></i>Overview of the Employees Screen</h2>
+                <p>The Employees management screen (<span class="highlight">frmEmployees</span>) allows you to view, add, edit, delete, import, and export employee details. The main components are:</p>
+                <ul>
+                    <li><strong>Employee List (Data Grid View):</strong> Displays all existing employees with their key details including ID, Full Name, Username, Address, Phone, and Role.</li>
+                    <li><strong>Employee Details Panel:</strong> Shows the details of the currently selected employee for editing or new entry. This includes Full Name, Username, Password, Address, Phone, and Role.</li>
+                    <li><strong>Action Buttons:</strong> Buttons for various operations like Add, Update, Delete, Save, Cancel, Import, and Export.</li>
+                    <li><strong>Navigation and Search Bar:</strong> Tools to navigate through the list and find specific employees.</li>
+                </ul>
+                <img src="images/employees.png" class="img-fluid mx-auto d-block" alt="Screenshot of the Employees management screen" />
+                <p class="note text-center">Image: The main interface for managing employees.</p>
+
+                <h2 class="mt-4"><i class="bi bi-list-ol me-2"></i>Viewing and Navigating Employees</h2>
+                <p>When you open the Employees screen (<span class="highlight">Employees_Load</span>), the system automatically loads all available employee records into the data grid view (<span class="highlight">dataGridView</span>).</p>
+
+                <h3>1. Navigating Through Records</h3>
+                <p>Use the navigation buttons on the toolbar to move through the list of employees:</p>
+                <ul>
+                    <li><strong class="text-primary">First (<span class="highlight">btnBegin</span>):</strong> Moves to the first record.</li>
+                    <li><strong class="text-primary">Previous (<span class="highlight">btnPrevious</span>):</strong> Moves to the previous record.</li>
+                    <li><strong class="text-primary">Next (<span class="highlight">btnNext</span>):</strong> Moves to the next record.</li>
+                    <li><strong class="text-primary">Last (<span class="highlight">btnEnd</span>):</strong> Moves to the last record.</li>
+                </ul>
+                <p>The details of the currently selected employee will be displayed in the respective fields: "Full Name" (<span class="highlight">txtEmployeeName</span>), "Username" (<span class="highlight">txtEmployeeUsername</span>), "Address" (<span class="highlight">txtEmployeeAddress</span>), "Phone" (<span class="highlight">txtEmployeePhone</span>), and "Role" (<span class="highlight">cboRoles</span>).</p>
+                <div class="alert alert-info" role="alert">
+                    <i class="bi bi-info-circle me-2"></i> <strong>Note:</strong> For security reasons, the "Password" field (<span class="highlight">txtEmployeePassword</span>) will be cleared when controls are enabled for editing or adding, and it does not display the existing password. You will need to enter a new password when updating or adding an employee.
+                </div>
+
+                <h3>2. Searching for Employees</h3>
+                <p>To find a specific employee:</p>
+                <ul>
+                    <li>Enter keywords into the search box (<span class="highlight">txtFind</span>).</li>
+                    <li>As you type, the list will automatically filter to show employees whose Full Name, Address, Phone, or Username contain the entered keyword (triggered by <span class="highlight">txtFind.TextChanged</span> calling <span class="highlight">btnFind.PerformClick</span>).</li>
+                    <li>If no matching employees are found, a "No matching customer found." (likely means "No matching employee found.") message will appear (in <span class="highlight">lblMessage</span>).</li>
+                    <li>Click the <strong class="text-secondary">Clear</strong> button (<span class="highlight">btnClear_Click</span>) to clear the search filter and display all employees again.</li>
+                </ul>
+
+                <h2 class="mt-4"><i class="bi bi-person-plus-fill me-2"></i>Adding a New Employee</h2>
+                <p>To add a new employee record:</p>
+                <ol>
+                    <li>Click the <strong class="text-success">Add</strong> button (<span class="highlight">btnAdd_Click</span>). All employee detail fields will become active and clear for new input, and the "Save" and "Cancel" buttons will be enabled. The cursor will focus on the "Full Name" field.</li>
+                    <li>Enter the details for the new employee:
+                        <ul>
+                            <li><strong>Full Name</strong> (<span class="highlight">txtEmployeeName</span>)</li>
+                            <li><strong>Username</strong> (<span class="highlight">txtEmployeeUsername</span>)</li>
+                            <li><strong>Password</strong> (<span class="highlight">txtEmployeePassword</span>) - *Required for new employees.*</li>
+                            <li><strong>Employee Address</strong> (<span class="highlight">txtEmployeeAddress</span>)</li>
+                            <li><strong>Employee Phone</strong> (<span class="highlight">txtEmployeePhone</span>)</li>
+                            <li><strong>Role</strong> (<span class="highlight">cboRoles</span>) - Select the employee's role (e.g., Administrator or Staff).</li>
+                        </ul>
+                    </li>
+                    <li>Click the <strong class="text-primary">Save</strong> button (<span class="highlight">btnSave_Click</span>) to create the new employee.</li>
+                    <li>A "Operation successful!" message will confirm the addition. The screen will then refresh, and the new employee will appear in the list.</li>
+                </ol>
+                <div class="alert alert-info" role="alert">
+                    <i class="bi bi-info-circle me-2"></i> <strong>Note:</strong> Ensure all required fields are filled accurately, especially Username and Password for login.
+                </div>
+
+                <h2 class="mt-4"><i class="bi bi-person-gear me-2"></i>Editing an Existing Employee</h2>
+                <p>To modify an existing employee record:</p>
+                <ol>
+                    <li>Select the employee you wish to edit from the data grid view (<span class="highlight">dataGridView</span>) by clicking on their row. The employee's details will appear in the input fields.</li>
+                    <li>Click the <strong class="text-warning">Update</strong> button (<span class="highlight">btnUpdate_Click</span>). All employee detail fields will become editable, and the "Save" and "Cancel" buttons will be enabled. The password field will be cleared.</li>
+                    <li>Modify the employee details as needed in the <span class="highlight">txtEmployeeName</span>, <span class="highlight">txtEmployeeUsername</span>, <span class="highlight">txtEmployeeAddress</span>, <span class="highlight">txtEmployeePhone</span>, and <span class="highlight">cboRoles</span> fields.</li>
+                    <li><strong>To change the password:</strong> Enter the new password in the <span class="highlight">txtEmployeePassword</span> field. If you do not enter a new password, the existing one will be retained (assuming the system handles this, as the field is cleared).</li>
+                    <li>Click the <strong class="text-primary">Save</strong> button (<span class="highlight">btnSave_Click</span>) to apply your changes.</li>
+                    <li>A "Operation successful!" message will confirm the update. The screen will then refresh to reflect the changes.</li>
+                </ol>
+
+                <h2 class="mt-4"><i class="bi bi-person-dash-fill me-2"></i>Deleting an Employee</h2>
+                <p>To remove an employee record:</p>
+                <ol>
+                    <li>Select the employee you wish to delete from the data grid view (<span class="highlight">dataGridView</span>).</li>
+                    <li>Click the <strong class="text-danger">Delete</strong> button (<span class="highlight">btnDelete_Click</span>).</li>
+                    <li>A confirmation message "Are you sure you want to delete this employee?" will appear. Click <strong class="text-success">Yes</strong> to proceed or <strong class="text-danger">No</strong> to cancel.</li>
+                    <li>If confirmed, an "Employee deleted successfully!" message will appear, and the employee will be removed from the list.</li>
+                </ol>
+                <div class="alert alert-danger" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i> <strong>Warning:</strong> Deleting an employee will permanently remove their record from the system. Ensure the employee no longer requires access.
+                </div>
+
+                <h2 class="mt-4"><i class="bi bi-file-earmark-arrow-down-fill me-2"></i>Importing Employees from Excel</h2>
+                <p>You can import multiple employee records from an Excel file:</p>
+                <ol>
+                    <li>Click the <strong class="text-info">Import</strong> button (<span class="highlight">btnImport_Click</span>). An "Open File" dialog will appear.</li>
+                    <li>Navigate to and select your Excel file (e.g., <span class="highlight">.xls</span> or <span class="highlight">.xlsx</span>).</li>
+                    <li>The system will read the data from the first worksheet. Ensure your Excel file has header columns named exactly: "FullName", "UserName", "Password", "EmployeeAddress", "EmployeePhone", and "Role". The "Role" column should contain boolean values (e.g., TRUE/FALSE or 1/0) or equivalent text that can be converted to boolean (e.g., "True" for Administrator, "False" for Staff).</li>
+                    <li>After the import process, a message indicating how many rows were successfully imported will appear.</li>
+                </ol>
+                <div class="alert alert-warning" role="alert">
+                    <i class="bi bi-file-earmark-excel-fill me-2"></i> <strong>Excel File Format:</strong>
+                    <br>
+                    The Excel file must have a header row with the exact column names: "FullName", "UserName", "Password", "EmployeeAddress", "EmployeePhone", and "Role". Ensure "Role" column data is compatible for boolean conversion.
+                </div>
+
+                <h2 class="mt-4"><i class="bi bi-file-earmark-arrow-up-fill me-2"></i>Exporting Employees to Excel</h2>
+                <p>You can export the current list of employees to an Excel file:</p>
+                <ol>
+                    <li>Click the <strong class="text-info">Export</strong> button (<span class="highlight">btnExport_Click</span>). A "Save File" dialog will appear.</li>
+                    <li>Choose a location and enter a file name for your Excel file (e.g., <span class="highlight">Employees_YYYY_MM_DD.xlsx</span>).</li>
+                    <li>Click <strong class="text-primary">Save</strong>.</li>
+                    <li>A "Exported data to Excel file successfully." message will confirm the export.</li>
+                    <li>The Excel file will contain columns for ID, Full Name, Employee Phone, Employee Address, Username, and Role.</li>
+                </ol>
+
+                <h2 class="mt-4"><i class="bi bi-x-circle-fill me-2"></i>Cancelling Actions and Closing</h2>
+                <ul>
+                    <li><strong class="text-secondary">Cancel Button (<span class="highlight">btnCancel_Click</span>):</strong> If you are in "Add" or "Update" mode, clicking "Cancel" will discard any unsaved changes and return the screen to its initial state, reloading the original data.</li>
+                    <li><strong class="text-secondary">Close Button (<span class="highlight">btnClose_Click</span>):</strong> Closes the Employees management screen and returns you to the main application.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('#navbar').load('inc/navbar.html');
+            $('#footer').load('inc/footer.html');
+        });
+    </script>
+</body>
+
+</html>

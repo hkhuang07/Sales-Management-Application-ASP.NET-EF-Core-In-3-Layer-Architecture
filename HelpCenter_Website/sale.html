@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./style.css" />
+    <title>Sale - HK.Huang Sales Management Software Guide</title>
+
+    <style>
+        /* Custom CSS for the guide page */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 960px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-body h2,
+        .card-body h3 {
+            color: #0056b3;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .card-body ul {
+            margin-bottom: 15px;
+        }
+
+        .card-body ul li {
+            margin-bottom: 8px;
+        }
+
+        .card-body strong {
+            color: #343a40;
+        }
+
+        .img-fluid {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .alert-info {
+            background-color: #e0f2f7;
+            border-color: #bee5eb;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .alert-warning {
+            background-color: #fff3cd;
+            border-color: #ffeeba;
+            color: #664d03;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .alert-danger {
+            background-color: #f8d7da;
+            border-color: #f5c2c7;
+            color: #842029;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .note {
+            font-style: italic;
+            color: #6c757d;
+            margin-top: 10px;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar"></div>
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <i class="bi bi-cart-fill me-2"></i>Sales Management User Guide
+            </div>
+            <div class="card-body">
+                <p class="card-text">This guide provides comprehensive instructions on how to effectively use the **Sales** module in the **HK.Huang Sales Management Software**. This module allows you to manage product display, create new orders, and view sales history.</p>
+
+                <h2 class="mt-4"><i class="bi bi-shop me-2"></i>Overview of the Sales Screen</h2>
+                <p>The main Sales screen (<span class="highlight">frmSale</span>) is divided into several key areas for efficient order processing:</p>
+                <ul>
+                    <li><strong>Product Display Area:</strong> (Left side, controlled by <span class="highlight">flowLayoutPanel1</span>) Shows all available products as interactive cards.</li>
+                    <li><strong>Order Details:</strong> (Right side, top, controlled by <span class="highlight">dgvOrderDetails</span>) Displays products currently added to the new order.</li>
+                    <li><strong>Order History:</strong> (Right side, bottom, controlled by <span class="highlight">dgvOrder</span>) Shows a list of previously created orders.</li>
+                    <li><strong>Control Buttons:</strong> Various buttons for searching, adding/removing items, confirming orders, and filtering.</li>
+                </ul>
+                <img src="images/Sale.png" class="img-fluid mx-auto d-block" alt="Screenshot of the main Sales screen with product list and order details" />
+                <p class="note text-center">Image: Main Sales screen showing product cards, current order details, and order history.</p>
+
+                <h2 class="mt-4"><i class="bi bi-search me-2"></i>Browse and Searching Products</h2>
+                <h3>1. Loading Products</h3>
+                <p>Upon opening the Sales screen (<span class="highlight">Saller_Load</span>), all available products are loaded and displayed as individual cards in the product display area (<span class="highlight">LoadProducts()</span>). Each card shows the product name, price, and image.</p>
+                
+                <h3>2. Searching for Products</h3>
+                <p>To quickly find a specific product:</p>
+                <ul>
+                    <li>Enter keywords into the search box (<span class="highlight">txtFind</span>).</li>
+                    <li>Click the <strong class="text-primary">Find</strong> button (<span class="highlight">btnFind_Click</span>) or simply type in the text box (triggered by <span class="highlight">txtFind_TextChanged</span>).</li>
+                    <li>Products matching the keyword in their name, description, manufacturer, or category will be displayed. If no matches are found, a "No matching customer found!" message (should be "No matching product found!") will appear.</li>
+                </ul>
+
+                <h2 class="mt-4"><i class="bi bi-file-earmark-plus-fill me-2"></i>Creating a New Order</h2>
+                <h3>1. Adding Products to Order Details</h3>
+                <p>You can add products to your current order in two ways:</p>
+                <ul>
+                    <li><strong>Clicking Product Card:</strong> Click the <strong class="text-success">+</strong> button on a product card or double-click the card itself (<span class="highlight">CardDoubleClicked</span> event calling <span class="highlight">SelectCard</span> then <span class="highlight">ProductCard_AddToOrder</span>).</li>
+                    <li><strong>Using the "Add" Button:</strong> Select a product card (by clicking it once, which highlights it) and then click the <strong class="text-primary">Add</strong> button (<span class="highlight">btnAdd_Click</span>). If no product is selected, a warning "Please select a product to add." will appear.</li>
+                </ul>
+                <p>When a product is added (<span class="highlight">ProductCard_AddToOrder</span>):</p>
+                <ul>
+                    <li>If the product is already in the order details, its quantity will be increased.</li>
+                    <li>If it's a new product for the order, it will be added with a quantity of 1.</li>
+                    <li>The total price for the current order will be updated automatically (<span class="highlight">RefreshOrderDetails</span>, <span class="highlight">txtTotalDetails</span>).</li>
+                </ul>
+                <div class="alert alert-warning" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i> <strong>Note:</strong> Products with a selling price of 0 or less cannot be added to an order. A warning "Product selling price must be greater than 0." will appear.
+                </div>
+                <img src="images/Sale01.png" class="img-fluid mx-auto d-block" alt="Screenshot showing products being added to the order details" />
+                <p class="note text-center">Image: Products being added to the order list on the right side of the sales screen.</p>
+
+
+                <h3>2. Removing Products from Order Details</h3>
+                <p>To remove products from your current order:</p>
+                <ul>
+                    <li><strong>Using the Subtract Button on Card:</strong> Click the <strong class="text-danger">-</strong> button on a product card (<span class="highlight">ProductCard_DeleteToOrder</span>). This will decrease the quantity of that product in the order. If the quantity drops to 0, the product will be removed entirely from the order details.</li>
+                    <li><strong>Using the "Delete" Button:</strong> Select a row in the order details table (<span class="highlight">dgvOrderDetails</span>) and click the <strong class="text-danger">Delete</strong> button (<span class="highlight">bntDelete_Click</span>). This will also decrease the quantity or remove the item if quantity drops to 0.</li>
+                </ul>
+
+                <h3>3. Clearing the Current Order</h3>
+                <p>To clear all items from the current order details, click the <strong class="text-secondary">Cancel</strong> button (<span class="highlight">btnCancel_Click</span>). All products will be removed from the <span class="highlight">dgvOrderDetails</span>.</p>
+
+                <h2 class="mt-4"><i class="bi bi-check2-circle me-2"></i>Confirming and Saving an Order</h2>
+                <p>Once you have added all desired products to the order details:</p>
+                <ol>
+                    <li>Click the <strong class="text-success">Order</strong> button (<span class="highlight">btnOrder_Click</span>).</li>
+                    <li>A **Confirm Order** dialog box (<span class="highlight">frmConfirm</span>) will appear.
+                        <img src="images/confirm.png" class="img-fluid mx-auto d-block" alt="Screenshot of the Confirm Order dialog" />
+                        <p class="note text-center">Image: Confirm Order dialog box for selecting customer, employee, and adding notes.</p>
+                        <ul>
+                            <li>Select the <strong class="text-primary">Customer</strong> from the dropdown list. (Validation: "Customer name cannot be left blank!")</li>
+                            <li>Select the <strong class="text-primary">Employee</strong> handling the sale (usually pre-filled).</li>
+                            <li>Add any relevant <strong class="text-primary">Note</strong> for the order (optional).</li>
+                            <li>Check the <strong class="text-primary">Print Invoice</strong> checkbox if you wish to print a receipt immediately after saving.</li>
+                        </ul>
+                    </li>
+                    <li>Click <strong class="text-success">OK</strong> on the Confirm Order dialog.</li>
+                    <li>The system will process the order (<span class="highlight">_orderService.CreateOrder</span> or <span class="highlight">_orderService.UpdateOrder</span>).</li>
+                    <li>A "Order saved successfully!" message will confirm completion.</li>
+                    <li>If "Print Invoice" was checked, a print preview window (<span class="highlight">frmPrintOrder</span>) will appear, allowing you to print the invoice.</li>
+                </ol>
+                <div class="alert alert-danger" role="alert">
+                    <i class="bi bi-x-circle-fill me-2"></i> <strong>Important:</strong> If there are no products in the order details when you click "Order", a warning "No products selected for the order!" will appear.
+                </div>
+
+                <h2 class="mt-4"><i class="bi bi-clipboard-data-fill me-2"></i>Managing Existing Orders</h2>
+                <h3>1. Viewing Order History</h3>
+                <p>The bottom right panel (<span class="highlight">dgvOrder</span>) displays a list of all sales orders. You can see details such as Order ID, Date, Customer, and Total Price.</p>
+                <p>The total revenue for the displayed orders is shown in the <span class="highlight">txtRevenue</span> field and is updated whenever the order list changes (<span class="highlight">UpdateRevenue()</span>).</p>
+
+                <h3>2. Filtering Orders by Date</h3>
+                <p>To view orders within a specific date range:</p>
+                <ul>
+                    <li>Use the <strong class="text-primary">Start Date</strong> (<span class="highlight">dtpStart</span>) and <strong class="text-primary">End Date</strong> (<span class="highlight">dtpEnd</span>) selectors to choose your desired period.</li>
+                    <li>Click the <strong class="text-primary">Filter</strong> button (<span class="highlight">btnFilter_Click</span>). The <span class="highlight">dgvOrder</span> will update to show only orders within the selected dates.</li>
+                </ul>
+
+                <h3>3. Printing Existing Invoices</h3>
+                <p>To print an invoice for a past order:</p>
+                <ul>
+                    <li>Select the desired order from the <span class="highlight">dgvOrder</span> list.</li>
+                    <li>Click the <strong class="text-primary">Print</strong> button (<span class="highlight">btnPrint_Click</span>). A print preview for that specific order will appear.</li>
+                </ul>
+
+                <h3>4. Closing the Sales Screen</h3>
+                <p>To exit the Sales module, click the <strong class="text-secondary">Close</strong> button (<span class="highlight">btnClose_Click</span>).</p>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('#navbar').load('inc/navbar.html');
+            $('#footer').load('inc/footer.html');
+        });
+    </script>
+</body>
+
+</html>

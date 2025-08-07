@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+	<link rel="icon" href="favicon.ico">
+    <title>Change Password - HK.Huang Sales Management Software Guide</title>
+
+    <style>
+        /* Custom CSS for the guide page */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 960px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-body h2,
+        .card-body h3 {
+            color: #0056b3;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .card-body ul {
+            margin-bottom: 15px;
+        }
+
+        .card-body ul li {
+            margin-bottom: 8px;
+        }
+
+        .card-body strong {
+            color: #343a40;
+        }
+
+        .img-fluid {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .alert-info {
+            background-color: #e0f2f7;
+            border-color: #bee5eb;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .note {
+            font-style: italic;
+            color: #6c757d;
+            margin-top: 10px;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar"></div>
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <i class="bi bi-key-fill me-2"></i>Change Password User Guide
+            </div>
+            <div class="card-body">
+                <p class="card-text">This guide explains how to use the **Change Password** function within the **HK.Huang Sales Management Software**. Regularly changing your password is a critical security practice to protect your account and sensitive data.</p>
+
+                <h2 class="mt-4"><i class="bi bi-person-lock me-2"></i>Understanding the Change Password Screen</h2>
+                <p>The Change Password screen allows authenticated users to update their login password. It typically consists of three input fields and action buttons.</p>
+                <img src="images/changepass.png" class="img-fluid mx-auto d-block" alt="Screenshot of the Change Password screen" />
+                <p class="note text-center">Image: The Change Password interface showing input fields and buttons.</p>
+
+                <h2 class="mt-4"><i class="bi bi-shield-lock-fill me-2"></i>How to Change Your Password</h2>
+                <p>To change your password, follow these steps:</p>
+
+                <h3>1. Access the Change Password Function</h3>
+                <p>Ensure you are logged into the application. The "Change Password" option is usually found in the main application menu (e.g., under "Account" or "File" menu), or a dedicated toolbar button (refer to <span class="highlight">mnuChangePass_Click</span> method in <span class="highlight">frmMain.cs</span>).</p>
+
+                <h3>2. Fill in the Password Fields</h3>
+                <ul>
+                    <li><strong class="text-primary">Old Password:</strong> Enter your current password in this field (<span class="highlight">txtOldPass</span>).</li>
+                    <li><strong class="text-primary">New Password:</strong> Enter your desired new password in this field (<span class="highlight">txtNewPass</span>).</li>
+                    <li><strong class="text-primary">Confirm New Password:</strong> Re-enter your new password in this field to confirm it (<span class="highlight">txtConfirm</span>). This helps prevent typing errors.</li>
+                </ul>
+                <div class="alert alert-info" role="alert">
+                    <i class="bi bi-lock-fill me-2"></i> <strong>Password Security Tips:</strong>
+                    <br>
+                    Choose a strong password that is at least 8 characters long, includes a mix of uppercase and lowercase letters, numbers, and symbols. Avoid using easily guessable information like birthdays or common words.
+                </div>
+
+                <h3>3. Submit Your New Password (btnChange_Click)</h3>
+                <p>After filling in all fields, click the <strong class="text-primary">Change</strong> button.</p>
+                <p>The system will perform several validations:</p>
+                <ul>
+                    <li><strong class="text-danger">All Fields Required:</strong> If any field is left empty, a warning message "Please fill in all fields!" will appear.</li>
+                    <li><strong class="text-danger">New Passwords Must Match:</strong> If the "New Password" and "Confirm New Password" do not match, an error message "New passwords do not match!" will appear.</li>
+                    <li><strong class="text-danger">Correct Old Password:</strong> The system will verify if the "Old Password" you entered is correct. If it's incorrect, an error message "Old password is incorrect!" will appear.</li>
+                    <li><strong class="text-danger">User Not Found:</strong> In rare cases, if the user account cannot be identified, an error "User not found!" might be shown.</li>
+                </ul>
+                <p>If all validations pass successfully, a "Password changed successfully!" message will be displayed, and the Change Password window will close (as per <span class="highlight">btnChange_Click</span> logic).</p>
+
+                <h3>4. Cancel Operation (btnCancel_Click)</h3>
+                <p>If you decide not to change your password, click the <strong class="text-secondary">Cancel</strong> button. This will close the Change Password window without making any modifications (as per <span class="highlight">btnCancel_Click</span> logic).</p>
+
+                <div class="alert alert-info" role="alert">
+                    <i class="bi bi-info-circle me-2"></i> <strong>Note:</strong>
+                    <br>
+                    For security purposes, it is recommended to remember your new password immediately. If you forget it after changing, you will need to contact the system administrator for assistance.
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('#navbar').load('inc/navbar.html');
+            $('#footer').load('inc/footer.html');
+        });
+    </script>
+</body>
+
+</html>

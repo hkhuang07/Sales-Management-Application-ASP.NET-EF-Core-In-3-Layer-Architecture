@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./style.css" />
+    <title>Product Statistics - HK.Huang Sales Management Software Guide</title>
+
+    <style>
+        /* Custom CSS for the guide page */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 960px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .card-body h2,
+        .card-body h3 {
+            color: #0056b3;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .card-body ul {
+            margin-bottom: 15px;
+        }
+
+        .card-body ul li {
+            margin-bottom: 8px;
+        }
+
+        .card-body strong {
+            color: #343a40;
+        }
+
+        .img-fluid {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .alert-info {
+            background-color: #e0f2f7;
+            border-color: #bee5eb;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .alert-warning {
+            background-color: #fff3cd;
+            border-color: #ffeeba;
+            color: #664d03;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .alert-danger {
+            background-color: #f8d7da;
+            border-color: #f5c2c7;
+            color: #842029;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .note {
+            font-style: italic;
+            color: #6c757d;
+            margin-top: 10px;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar"></div>
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <i class="bi bi-bar-chart-fill me-2"></i>Product Statistics User Guide
+            </div>
+            <div class="card-body">
+                <p class="card-text">This guide explains how to use the **Product Statistics** feature in the HK.Huang Sales Management Software, allowing you to view and filter product data and generate reports.</p>
+
+                <h2 class="mt-4"><i class="bi bi-layout-text-sidebar-reverse me-2"></i>Overview of the Product Statistics Screen</h2>
+                <p>The Product Statistics screen (<span class="highlight">frmProductStatistics</span>) is designed to provide detailed insights into your products, including their categories, manufacturers, quantities, and prices. You can filter this data to generate specific reports.</p>
+                <img src="images/productstatistics.png" class="img-fluid mx-auto d-block" alt="Screenshot of the Product Statistics screen" />
+                <p class="note text-center">Image: The Product Statistics interface with filter options and report viewer.</p>
+
+                <h3 class="mt-4"><i class="bi bi-download me-2"></i>Initial Load and Default Report</h3>
+                <p>When you first open the Product Statistics screen (<span class="highlight">frmProductStatistics_Load</span>):</p>
+                <ul>
+                    <li>The <strong class="text-primary">Category</strong> and <strong class="text-primary">Manufacturer</strong> dropdowns (<span class="highlight">cboCategory</span>, <span class="highlight">cboManufacturer</span>) are populated with available data.</li>
+                    <li>The report viewer automatically displays a comprehensive list of <strong class="text-info">All Products</strong>, including their ID, Manufacturer, Category, Product Name, Price, Quantity, Image (if applicable), and Description.</li>
+                    <li>The report's title will indicate "(All Products)" as the current filter description.</li>
+                </ul>
+
+                <h3 class="mt-4"><i class="bi bi-filter-circle-fill me-2"></i>Filtering Product Statistics</h3>
+                <p>You can narrow down the product list displayed in the report viewer by applying filters:</p>
+                <ol>
+                    <li><strong>Select Category:</strong> Choose a specific category from the <strong class="text-primary">Category</strong> dropdown.</li>
+                    <li><strong>Select Manufacturer:</strong> Choose a specific manufacturer from the <strong class="text-primary">Manufacturer</strong> dropdown.</li>
+                    <li><strong>Apply Filter:</strong> Click the <strong class="text-success">Filter</strong> button (<span class="highlight">btnFilter_Click</span>).
+                        <ul>
+                            <li>The report viewer will refresh to show only products matching your selected criteria.</li>
+                            <li>The report's title will update to reflect the applied filters (e.g., "(Manufacturer: [Selected Manufacturer] - Category: [Selected Category])").</li>
+                        </ul>
+                    </li>
+                    <li><strong>Clear Filters:</strong> If both Category and Manufacturer dropdowns are empty, clicking the <strong class="text-success">Filter</strong> button will reload the report to show all products again. You can manually clear the dropdowns to achieve this.</li>
+                </ol>
+                <div class="alert alert-info" role="alert">
+                    <i class="bi bi-info-circle me-2"></i> <strong>Tip:</strong> You can apply filters individually (e.g., filter by Category only, or by Manufacturer only) or combine them.
+                </div>
+
+                <h3 class="mt-4"><i class="bi bi-filetype-pdf me-2"></i>Printing/Exporting Statistics to PDF</h3>
+                <p>To save the currently displayed product statistics report as a PDF file:</p>
+                <ol>
+                    <li>Click the <strong class="text-info">Print</strong> button (<span class="highlight">btnPrint_Click</span>).</li>
+                    <li>A "Save As" dialog box will appear.</li>
+                    <li>Choose a location on your computer to save the file.</li>
+                    <li>The default file name will be "Product_Statistics_DD_MM_YYYY.pdf" (e.g., `Product_Statistics_04_07_2025.pdf`). You can change this if desired.</li>
+                    <li>Click <strong class="text-primary">Save</strong>.</li>
+                    <li>A "Product statistics saved successfully!" message will confirm that the PDF has been generated and saved.</li>
+                </ol>
+                <div class="alert alert-warning" role="alert">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i> <strong>Note:</strong> If there is no data in the report viewer (e.g., after applying filters that yield no results), a warning message "No report data to save." will appear when attempting to print.
+                </div>
+
+                <h3 class="mt-4"><i class="bi bi-x-circle-fill me-2"></i>Closing the Product Statistics Screen</h3>
+                <ul>
+                    <li>Click the <strong class="text-danger">Close</strong> button (<span class="highlight">btnClose_Click</span>) to exit the Product Statistics screen.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('#navbar').load('inc/navbar.html');
+            $('#footer').load('inc/footer.html');
+        });
+    </script>
+</body>
+
+</html>

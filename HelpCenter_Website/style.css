@@ -1,0 +1,357 @@
+
+body {
+	margin: 0;
+	background-color:s whitesmoke ;
+	overflow-x: hidden;
+	font-family: 'Times New Roman';
+
+}
+
+#WebPage {
+	width: 100%;
+	margin: 0 auto;
+	border: 1px solid blue;
+}
+
+
+#Header {
+	height: 220px;
+	background: url(../images/banner2h.png) no-repeat center center;
+	background-size: cover;
+	text-align:right;
+	vertical-align: middle;
+}
+
+a{
+	text-decoration: none;
+}
+#MiddlePart {
+    display: flex;
+	width: 100%;
+    flex-wrap: nowrap; /* Ngăn các phần tử con xuống dòng */
+    width: 100%;
+    box-sizing: border-box;
+	gap: 5px; /* Khoảng cách giữa các phần tử */
+	margin: 0 auto; /* Căn giữa */
+	background-color: whitesmoke; /* Màu nền của MiddlePart */
+}
+
+#Left, #Middle, #Right {
+    float: none; /* Loại bỏ float */
+    padding: 10px;
+    box-sizing: border-box; /* Giữ padding trong width */
+}
+
+
+#Left {
+	flex: 1 1 150px; /* Tự co dãn với min width 150px */
+	max-width: 20%;
+	height: auto;
+	border: 1px solid midnightblue;
+	padding-right : 10px;
+	border-radius: 8px; /* Bo góc nhẹ */
+}
+
+#Left.sidebar {
+	width: 60px;
+	background-color: midnightblue;
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: auto;
+	transition: width 0.3s;
+	/*position: fixed; */
+}
+
+#Left.sidebar:hover {
+	width: 15%;
+}
+
+#Left .nav-link {
+	padding: 12px;
+	white-space: nowrap;    
+	border-bottom: 1px solid #406080; /* Xanh navy nhạt */
+	color: #e0f7fa;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#Left .menu-label {
+	display: inline;
+	transition: opacity 0.3s ease;
+}
+
+#Left:hover .menu-label {
+	display: inline;
+	opacity: 1;
+}
+
+#Left .dropdown-menu {
+	display: none;
+	position: static;
+	float: none;
+}
+
+#Left .nav-item:hover .dropdown-menu {
+	display: block;
+	position: relative;
+	box-shadow: none;
+	padding-left: 1rem;
+	background-color: transparent;
+}
+
+#Left .nav-link:hover {
+    background-color: #2e8bcc;
+	color: rgb(140, 240, 250); /* Màu chữ của tiêu đề */
+}
+
+.dropdown-item {
+	padding: 6px 12px;
+	color: navy;
+	border-bottom: slateblue 1px solid;
+}
+
+.dropdown-item:hover {
+	background-color:  steelblue;
+	color:  navy;
+}
+
+
+#Middle {
+	/*width: calc(100% - 60%); /* mặc định khi Left thu gọn */
+    flex: 2 1 300px; /* Phần giữa ưu tiên chiếm nhiều không gian hơn */
+	max-width: 60%;
+	transition: margin-left 0.3s ease;
+	padding-left: 10px;
+	display: inline;
+}
+
+/* Khi hover Left thì Right co lại */
+#Left:hover ~ #Middle {
+	width: calc(100%-125px); /* Khi Left mở rộng */
+}
+
+#Middle h3 {
+	font-size: 20px;
+	padding: 2px 0 10px 0;
+	color: darkslateblue;
+	font-family: Tahoma;
+	margin-top: 8px;
+	margin-bottom: 0;
+	text-shadow: 2px 2px 3px grey;
+}
+
+#Middle h4 {
+	font-size: 15px;
+	padding: 2px 0 10px 0;
+	color: darkslateblue;
+	font-family: Tahoma;
+	margin-top: 8px;
+	margin-bottom: 0;
+	text-shadow: 2px 2px 3px grey;
+}
+
+#Right {
+	flex: 1 1 150px; /* Tự co dãn với min width 150px */
+	max-width: 20%;
+	margin-left: auto;
+	text-align: center;
+}
+
+#Right img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 2px 2px 5px gray;
+	margin-bottom: 10px;
+}
+
+
+footer {
+	width: 100%;
+	clear: both;
+	height: auto;
+	background: midnightblue;
+	font-size: 10px;
+	color: whitesmoke; 
+	text-align: center; 
+	padding: 20px 0;
+
+}
+
+.contact{
+	text-align:center;
+	vertical-align: middle;
+	color:red;
+	font-size: 16px;
+	padding-top: 15px;
+	
+}
+
+.ErrorMessage {
+	padding: 0;
+	margin: 0;
+	color: #ff0000;
+}
+
+.Message {
+	padding: 0;
+	margin: 0;
+	color: #0000ff;
+}
+
+table.Form {
+	border-collapse: collapse;
+}
+
+table.Form th {
+	border: 0px solid #778899;
+	padding: 3px 2px 3px 2px;
+}
+
+table.Form td {
+	border: 0px solid #778899;
+	padding: 3px 2px 3px 2px;
+}
+
+table.List {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table.List th {
+	border: 1px solid #778899;
+	padding: 3px 2px 3px 2px;
+	background: #b0c4de;
+}
+
+table.List td {
+	border: 1px solid #778899;
+	padding: 3px 2px 3px 2px;
+}
+
+input[type=text], input[type=password] {
+	width: 300px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px dotted #808000;
+}
+
+select {
+	width: 300px;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 1px dotted #808000;
+}
+
+textarea {
+	border-top: 1px dotted #808000;
+	border-left: 1px dotted #808000;
+	border-right: 1px dotted #808000;
+	border-bottom: 1px dotted #808000;
+}
+
+input[type=submit] {
+	margin-top: 8px;
+	border: 1px solid #808000;
+	padding: 3px 5px 3px 5px;
+	background-color: #98FB98;
+}
+
+input.error {
+	border-bottom: 1px solid #ff0000;
+}
+
+select.error {
+	border-bottom: 1px solid #ff0000;
+}
+
+textarea.error {
+	border-top: 1px solid #ff0000;
+	border-left: 1px solid #ff0000;
+	border-right: 1px solid #ff0000;
+	border-bottom: 1px solid #ff0000;
+}
+
+label.error {
+	color: #ff0000;
+}
+
+span.requirefield {
+	color: #FF0000;
+	font-size: 12px;
+}
+
+p.requirefields {
+	color: #FF0000;
+	font-style: italic;
+	font-size: 12px;
+	padding: 0;
+	margin: 3px 0px 3px 0px;
+}
+.logo {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;  /* Căn giữa các ảnh theo chiều ngang */
+    align-items: center;  /* Căn giữa các ảnh theo chiều dọc */
+    gap: 20px;  /* Khoảng cách giữa các ảnh */
+    padding-left: 20px;
+}
+
+.logo img {
+    height: 80px;  /* Thiết lập chiều cao của ảnh */
+    object-fit: contain;  /* Đảm bảo ảnh không bị méo */
+}
+
+p{
+   display:block;
+   text-align: center;
+}
+
+.card-header{
+	background-color:navy ; /* Màu nền của tiêu đề card */
+	color: rgb(140, 240, 250); /* Màu chữ của tiêu đề card */
+	padding: 5px; /* Khoảng cách bên trong tiêu đề card */
+	font-size: 20px; /* Kích thước chữ của tiêu đề card */
+	text-align: center; /* Căn giữa nội dung trong tiêu đề card */
+	font-weight: bold; /* Đậm chữ */
+}
+
+.adress{
+	text-align: left;
+	color: midnightblue;
+	font-size: 16px;
+	padding-top: 15px;
+}
+
+
+.form {
+    max-width: 100%;          /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto;            /* Căn giữa form trong trang */
+    padding: 20px;             /* Thêm khoảng cách bên trong */
+    background-color: #ffffff; /* Màu nền trắng (hoặc tùy chọn) */
+    border-radius: 8px;        /* Bo góc nhẹ */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Đổ bóng nhẹ */
+}
+
+.form .form-control {
+    width: 100%;               /* Input chiếm toàn bộ chiều rộng */
+    box-sizing: border-box;    /* Đảm bảo padding không làm vượt chiều rộng */
+}
+
+.form-label {
+    font-weight: 500;          /* Nhấn mạnh nhãn */
+}
+.navbar {
+    background-color: midnightblue !important;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: white !important;
+}
+
+.navbar .nav-link:hover {
+    color: lightblue !important;
+}

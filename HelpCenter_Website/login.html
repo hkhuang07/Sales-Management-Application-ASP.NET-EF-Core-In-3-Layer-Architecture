@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./style.css" />
+    <title>Login Screen - HK.Huang Sales Management Software Guide</title>
+	<link rel="icon" href="favicon.ico">
+    <style>
+        /* Custom CSS for the guide page */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 960px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: 10000;
+        }
+
+        .card-body h2,
+        .card-body h3 {
+            color: #0056b3;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .card-body ul {
+            margin-bottom: 15px;
+        }
+
+        .card-body ul li {
+            margin-bottom: 8px;
+        }
+
+        .card-body strong {
+            color: #343a40;
+        }
+
+        .img-fluid {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .alert-info {
+            background-color: #e0f2f7;
+            border-color: #bee5eb;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .note {
+            font-style: italic;
+            color: #6c757d;
+            margin-top: 10px;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar"></div>
+
+        <div class="card mt-3">
+            <div class="card-header">
+                <i class="bi bi-person-lock me-2"></i>Login Screen User Guide
+            </div>
+            <div class="card-body">
+                <p class="card-text">Welcome to the user guide for the **Login Screen** of the **HK.Huang Sales Management Software**. This screen is your gateway to accessing the system and ensures that only authorized personnel can manage business operations. This guide will walk you through the components of the login interface and how to use it effectively.</p>
+
+                <h2 class="mt-4"><i class="bi bi-image-fill me-2"></i>Login Screen Overview</h2>
+                <p>The login screen is straightforward, designed to allow quick and secure access. Please refer to the image below to visualize the layout:</p>
+                <img src="images/login.png" class="img-fluid mx-auto d-block" alt="Login screen of HK.Huang Sales Management Software" />
+                <p class="note text-center">Image: The main login screen.</p>
+
+                <h2 class="mt-4"><i class="bi bi-key-fill me-2"></i>How to Log In</h2>
+                <p>To access the HK.Huang Sales Management Software, follow these steps:</p>
+
+                <h3>1. Enter Your Credentials</h3>
+                <ul>
+                    <li><strong class="text-primary">Username Field:</strong> Enter your registered username into the "Username" text box.</li>
+                    <li><strong class="text-primary">Password Field:</strong> Enter your corresponding password into the "Password" text box.</li>
+                </ul>
+                <p class="note"><strong>Tip:</strong> After entering your username, you can press the <span class="highlight">Enter</span> key to automatically move the cursor to the password field, as handled by <span class="highlight">txtUserName_KeyDown</span> method.</p>
+
+                <h3>2. Submit Your Credentials (btnLogin_Click)</h3>
+                <p>Once you have entered both your username and password, you have two ways to proceed:</p>
+                <ul>
+                    <li><strong class="text-primary">Click Login Button:</strong> Click the <span class="highlight">Login</span> button.</li>
+                    <li><strong class="text-primary">Press Enter Key:</strong> If your cursor is in the password field, you can press the <span class="highlight">Enter</span> key to submit your credentials, which triggers the <span class="highlight">btnLogin_Click</span> method.</li>
+                </ul>
+                <p class="note">The system will then verify your credentials against its database. If successful, you will be directed to the Main Interface; otherwise, an error message will be displayed (e.g., "Incorrect login name!" or "Incorrect password!").</p>
+
+                <h2 class="mt-4"><i class="bi bi-x-circle-fill me-2"></i>Cancel Login / Exit Application (btnCancel_Click)</h2>
+                <p>If you decide not to log in, or wish to exit the application directly from the login screen, you can:</p>
+                <ul>
+                    <li><strong class="text-primary">Click Cancel Button:</strong> Click the <span class="highlight">Cancel</span> button. This action will close the login window, allowing you to exit the application.</li>
+                </ul>
+
+                <div class="alert alert-info" role="alert">
+                    <i class="bi bi-shield-fill-check me-2"></i> <strong>Security Note:</strong>
+                    <br>
+                    Your password is encrypted using a secure hashing algorithm (like BCrypt) to protect your account. Always keep your login credentials confidential and avoid sharing them. If you forget your password, please contact your system administrator.
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            $('#navbar').load('inc/navbar.html');
+            $('#footer').load('inc/footer.html');
+        });
+    </script>
+</body>
+
+</html>
