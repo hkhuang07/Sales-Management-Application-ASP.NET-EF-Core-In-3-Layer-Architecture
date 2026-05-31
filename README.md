@@ -1,4 +1,4 @@
-# Sales Management System Software - ASP.NET (Entity Framework Core) in 3-Layer Architecture
+# Sales Management System Software - .NET Entity Framework Core in 3-Layer Architecture
 ---
 ## 🎯 Project Overview: Revolutionizing Electronic Store Management
 
